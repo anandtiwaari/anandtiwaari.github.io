@@ -1,0 +1,235 @@
+/* first reset  the css */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* now style the navigation bar */
+#navbar{
+    display: flex;
+    font-size: 12px;
+    position: relative;
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: bolder;
+    /* background-color: black; */
+    /* justify-content: center; */
+}
+/* abb jo navbar ke andarr hai usko styling kaaro matlab logo or ul ko */
+#logo{
+    margin: 43px 41px;
+}
+#logo img{
+    height: 69px;
+    width: 73px;
+    margin: -30px -14px;
+    
+}
+#navbar ul{
+    display: flex;
+    list-style: none;
+    /* border: 2px solid black;    */
+    margin: 36px 2px;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    display: block;
+    padding: 3px 22px ;
+    border-radius: 20px;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 441px;
+    font-family: 'Bree Serif', serif
+}
+#home::before{
+    background: url('back.jpg')no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    /* background-color: black; */
+    height: 80%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.welcome{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    margin: 16px;
+    color: white;
+    background-color: rgb(190, 47, 47);
+    border: 2px solid white;
+    font-size: 1.3rem;
+    border-radius: 15px;
+    cursor: pointer;
+    
+}
+.services{
+    margin: -21px 2px;
+}
+#services1{
+    margin: 36px;
+    padding: 25px;
+    display: flex;
+    /* flex-wrap: wrap; */
+
+}
+.box{
+    border: 2px solid black;
+    padding: 10px;
+    margin: 0px 2px;
+    border: 2px solid brown;
+    border-radius: 28px;
+    background-color: #f2f2f2;
+    font-family: 'Bree Serif', serif
+    
+}
+img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+h2{
+    font-size: 1.3rem;
+    padding: 12px;
+    text-align: center;
+}
+.sec2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+#about{
+    /* border: 2px solid black; */
+        /* display: flex;  
+        flex-direction: column;  */
+     background-color: #f2f2f2;
+    justify-content: center; 
+}
+#about::before{
+    /* background: url('launda.jpg') no-repeat center/cover; */
+    /* background-color: black; */
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.3;
+    height: 100%;
+    width: 100%;
+}
+.head3{
+    text-align: center;
+    font-size: 3rem;
+    padding: 12px;
+    align-items: center;
+}
+.climg{
+    /* padding: 2px 2px; */
+    height: 150px;
+    /* margin: 2px 2px;  */
+    
+}
+#clients{
+    display: flex;
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.clientitem{
+    padding: 3px 25px;
+}
+/* //contact form */
+.sfor{
+    font-size: 3rem;
+    padding: 12px;
+    text-align: center;
+}
+#forsec{
+   margin: 40px 0px;
+   /* padding: 62px 21px; */
+   /* border: 2px solid black; */
+}
+/* #forsec::before{
+    background: url('alag.jpg')no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 180%;
+    left: 0px;
+    height: 31%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+} */
+.form1::before{
+    background: url('hmm.jpg')no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 193%;
+    left: 0px;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+.form1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:15px 12px ;
+}
+/* .from{
+    padding: 15px 12px;
+    margin: 12px 12px;
+} */
+.kaaam{
+    /* padding: 3px 12px; */
+    margin: 18px;
+    font-family: 'Bree Serif', serif;
+    font-size: 2rem;
+    
+}
+footer{
+    background: black;
+    color: whitesmoke;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
