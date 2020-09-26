@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banate hai kuchh</title>
+    <!-- yahaa se css hai -->
+    <style>
+        body{
+    /* background: url(bg.jpg)no-repeat center center/cover; */
+    background: url(https://source.unsplash.com/user/erondu/1600x900)no-repeat center center/cover;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+#clockcontainer{
+    /* background-color: red; */
+    position: relative;
+    height: 40vw;
+    width: 40vw;
+    background: url(clk2.png)no-repeat;
+    background-size: 100%;
+    /* border: 2px solid red; */
+    margin: auto;
+}
+#hour,#minute,#second{
+    position: absolute  ;
+    background-color: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+#hour{
+    height: 20%;
+    width: 1.6%;
+    top: 31%;
+    left: 49.3%;
+    /* opacity: 0.8; */
+    /* background-color: darkgoldenrod; */
+    /* display: none; */
+}
+#minute{
+    height: 24%;
+    width: 1.2%;
+    top: 27%;
+    left: 49.3%;
+    /* opacity: 0.3;    */
+    /* background-color: rgb(2, 134, 20); */
+    /* display: none; */
+}
+#second{
+    height: 31%;
+    width: 1%;
+    top: 19.4%;
+    left: 49.3%;
+    /* opacity: 0.5;    */
+    /* background-color: rgb(11, 43, 184); */
+}
+/* #mid{
+    width: 30px;
+    top: 48%;
+    left: 48%;
+    height: 30px;
+    border-radius: 36px;
+} */
+    </style>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <div id="clockcontainer">
+        <div id="hour"></div>
+        <div id="minute"></div>
+        <div id="second"></div>
+        <div id="mid"></div>
+    </div>
+    <!-- yahaa se javaa-script hai -->
+    <script>
+        setInterval(() => {
+    let date=new Date();
+    htime=date.getHours();
+    mtime=date.getMinutes();
+    stime=date.getSeconds();
+    hrotation=30*htime +mtime/2;
+    mrotation=6*mtime; 
+    srotation=6*stime;
+    hour.style.transform= `rotate(${hrotation}deg)`;
+    minute.style.transform= `rotate(${mrotation}deg)`;
+    second.style.transform= `rotate(${srotation}deg)`;
+}, 1000);
+    </script>
+    <!-- <script src="jss.js"></script> -->
+</body>
+</html>
