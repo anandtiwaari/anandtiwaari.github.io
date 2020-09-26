@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anands Website</title>
+    <style>
+        body{
+            font-family: 'Baloo Bhaina 2', cursive;
+            margin: 0px;
+            padding: 0px;
+            background: url('gym2.jpg');
+            height: 4544px;
+            color: white;
+        }
+        .left{
+            /* border: 2px solid rgb(229, 238, 229); */
+            display: inline-block;
+            position: absolute;
+            left: 30px;
+            top: 20px;
+            width:auto;
+            font-size: 20px;
+            background-color: black;
+            color:navy;
+            /* border-radius: 8px; */
+            border:3px solid grey;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-right-color: mediumpurple;
+            
+
+        }
+        .mid{
+            /* border: 2px solid rgb(247, 36, 9); */
+            display: block;
+            width: 45%;
+            margin: 20px auto;
+            margin-top: 7px;
+        }
+        .right{
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            /* border: 2px solid rgb(244, 248, 19); */
+            
+        }
+        /* .right button a{
+            text-decoration: none;
+            /* background-color: khaki; */
+            /* padding: 5px;
+            overflow: auto;
+            color: black; */ 
+
+        /* } */
+        .navbar{
+            display: inline;
+        }
+        .navbar li{
+            display: inline;
+            /* font-size: 18px; */         
+        }
+        .navbar li a{
+            padding: 15px;
+            /* padding-right: 14px;
+            padding-left:12px ; */
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+            /* margin: 12px; */
+
+        }
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration: underline; 
+            color:gray;
+        }
+        .btn{
+            margin: 0 9px;
+            color: white;
+            background-color:black;
+            overflow: auto;
+            border: 4px solid grey;
+            border-radius: 24px;
+            font-size: 16px;
+            padding: 5px;
+            padding-bottom: 0px;
+            padding-top: 0px;
+        }
+        .btn a{
+            color: white;
+            text-decoration: none;
+            font-family: 'Baloo Bhaina 2', cursive;
+            /* border: 3px solid grey; */
+        }
+        .btn :hover{
+            background-color: grey;
+        }
+        #sahi{
+            color: springgreen;
+            font-size: 15px;
+            padding: 0px;
+        }
+        .container{
+            border: 2px solid white;
+            margin: 98px 40px ;
+            padding: 30px 25px;
+            width: 45%;
+            border-radius: 12px;
+        }
+        .form input{
+            text-align: center;
+            font-size: 20px;
+            border: 2px solid black;
+            display: block;
+            width: 65%;
+            padding: 6px;
+            margin: 3px auto;
+            border-radius: 8px;
+            
+        }
+        #kadak{
+            text-align: center;
+        }
+        .container button{
+            display: block;
+            width: 63%;
+            margin:20px auto;
+            padding: 5px;
+        }
+        .container button:hover{
+            color: grey;
+            cursor: pointer;
+        }
+      
+    </style>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@800&display=swap" rel="stylesheet">
+<body>
+    <header class="header">
+        <div class="left">
+            Anand Fitness
+            <div id="sahi">
+                Just Do it !
+            </div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="https://google.com">Home</a></li>
+                <li><a href="https://Facebook.com">About Us</a></li>
+                <li><a href="https://Twitter.com">Fitness Center</a></li>
+                <li><a href="https://pixabay.com">Contact us</a></li>
+            </ul> 
+        </div>
+        <div class="right">
+            <button class="btn"><a href="9106761117">Call Us Now</a></button>
+            <button class="btn"><a href="anandt607@gmail.com">Email Us Now</a></button>
+        </div>
+    </header>
+    <div class="container">
+        <h1 id="kadak">Join Best gym of Ahmedabad Now</h1>
+        <form class="form">
+            <div>
+                <input type="name" placeholder="Enter Your name">
+            </div>
+            <div>
+                <input type="name" placeholder="Enter Your Age">
+            </div>
+            <div>
+                <input type="name" placeholder="Enter Your gender">
+            </div>
+            <div>
+                <input type="name" placeholder="Enter Your locality">
+            </div>
+            <button class="btn" id="vahi">Join now</button>
+        </form>
+    </div>
+</body>
+</html>
