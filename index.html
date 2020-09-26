@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator|java-script</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        .container{
+    text-align: center;
+    margin-top: 1.38rem;
+    /* border: 2px solid black; */
+
+}
+table{
+    margin: auto;
+    /* border: 2px solid black; */
+}
+button{
+    background-color: rgb(228 228 228);
+    font-size: 2.52rem;
+    width: 7rem;
+    height: 4.5rem;
+    margin: 0.18rem;
+    border-radius: 20000px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+input{
+    font-size: 2.04rem;
+    border: 0.18rem solid rgb(19, 18, 18);
+    border-radius: 1.44rem;
+    
+}
+.calculator{
+    display: inline-block;
+    /* border: 2px solid black; */
+    background-color: rgb(235 244 247);
+    border-radius: 1.56rem;
+    padding: 1.14rem;
+}
+/* #green{
+    background-color: lightgreen; 
+} */
+#green{
+    transition: all 0.4s ease-in-out;
+   
+}
+#green:hover{
+    
+    background-color: lightgreen; 
+    box-shadow: 0 0 5px 0;
+}
+#orange{
+    transition: all 0.4s ease-in-out;
+    
+}
+#orange:hover{
+    
+    background-color: orange;
+    box-shadow: 0 0 5px 2px;
+}
+#vanila{
+    transition: all 0.4s ease-in-out;
+    
+}
+#vanila:hover{
+    
+    background-color: rgb(230, 84, 84);
+    box-shadow: 0 0 5px 2px;
+}
+#lblue{
+    transition: all 0.4s ease-in-out;
+    
+}
+#lblue:hover{
+    
+    background-color: royalblue;
+    box-shadow: 0 0 5px 2px;
+}
+#violet{
+    transition: all 0.4s ease-in-out;
+   
+}
+#violet:hover{
+    
+    background-color: rgb(85, 101, 151);
+    box-shadow: 0 0 5px 2px;
+}
+#bri{
+    transition: all 0.4s ease-in-out;
+    
+}
+#bri:hover{
+    
+    background-color: rgb(179, 131, 70);
+    box-shadow: 0 0 5px 2px;
+}
+#cri{
+    transition: all 0.4s ease-in-out;
+   
+}
+#cri:hover{
+   
+    background-color: rgb(123, 89, 187);
+    box-shadow: 0 0 5px 2px;
+}
+#dri{
+    transition: all 0.4s ease-in-out;
+    
+}
+#dri:hover{
+   
+    background-color: rgb(179, 131, 70);
+    box-shadow: 0 0 5px 2px;
+}
+.just{
+    transition: all 0.3s ease-in-out;
+}
+.just:hover{
+    background-color: grey;
+}
+/* /* h1{
+    width: auto; */
+    /* margin: 0 3rem; */
+    /* background-color: bisque; */
+    /* display: inline-block; */
+    /* border-radius: 2.3rem; */
+/* } */ 
+/* @media screen and (min-width: 700px) {
+  #leftsidebar {width: 200px; float: left;}
+  #main {margin-left: 216px;}
+} */
+@media (max-width: 700px){
+    button{
+        background-color: rgb(228 228 228);
+    font-size: 1.52rem;
+    width: 5rem;
+    height: 5rem;
+    margin: 0.06rem;
+    border-radius: 500px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none
+    }
+    .calculator{
+    display: inline-block;
+    /* border: 2px solid black; */
+    background-color: rgb(235 244 247);
+    border-radius: 1.56rem;
+    padding: 0.5rem;
+}
+input{
+    font-size: 1.5rem;
+    border: 0.11rem solid rgb(19, 18, 18);
+    border-radius: 1.44rem;
+    
+}
+}    
+
+    </style>
+</head>
+<body>
+    <div class="container">
+            <h1>Calculator By Anand</h1>
+            <div class="calculator">
+            <input type="text" name="screen" id="screen">
+            <table>
+                <tr>
+                    <td><button id="bri">(</button></td>
+                    <td><button id="cri">)</button></td>
+                    <td><button id="dri">C</button></td>
+                    <td><button id="green">%</button></td>
+                </tr>
+                <tr>
+                    <td><button class="just">7</button></td>
+                    <td><button class="just">8</button></td>
+                    <td><button class="just">9</button></td>
+                    <td><button id="orange">X</button></td>
+                </tr>
+                <tr>
+                    <td><button class="just">4</button></td>
+                    <td><button class="just">5</button></td>
+                    <td><button class="just">6</button></td>
+                    <td><button id="vanila">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="just">1</button></td>
+                    <td><button class="just">2</button></td>
+                    <td><button class="just">3</button></td>
+                    <td><button id="lblue">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="just">0</button></td>
+                    <td><button class="just">.</button></td>
+                    <td><button class="just">/</button></td>
+                    <td><button  id="violet" class="imagine">=</button></td>    
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script >
+        let screen=document.getElementById("screen");
+let buttons=document.querySelectorAll("button");
+let screenvalue='';
+for(item of buttons)
+{
+    item.addEventListener("click",(e)=>{
+         buttontext= e.target.innerText;
+         console.log("button text is : ", buttontext);
+         if(buttontext=='X')
+         {
+             buttontext='*';
+             screenvalue+=buttontext;
+             screen.value=screenvalue;
+         }
+         else if(buttontext=='C')
+         {
+            screenvalue="";
+            screen.value=screenvalue;
+         }
+         else if(buttontext=="=")
+         {
+             screen.value=eval(screenvalue)
+         }
+         else{
+            screenvalue+=buttontext;
+            screen.value=screenvalue;
+         }
+    });
+}
+    </script>
+</body>
+</html>
