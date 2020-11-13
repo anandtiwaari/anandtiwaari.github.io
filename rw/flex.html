@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hmm..</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            margin: auto;
+            /* background-color: aquamarine; */
+        }
+
+
+        .logo img {
+            height: 12vh;
+        }
+
+        .call img {
+            height: 10vh;
+        }
+
+        .logo {
+            /* background-color: blueviolet; */
+            flex: 1;
+            /* justify-content: center; */
+        }
+
+        .logo h4 {
+            color: #5f5f79;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav {
+            flex: 2;
+        }
+
+        .navlinks {
+            /* background-color: coral; */
+            justify-content: space-around;
+            list-style: none;
+        }
+
+        .navlink {
+
+            color: #5f5f79;
+            text-decoration: none;
+            display: flex;
+            /* border: 2px solid black; */
+            /* flex: 2; */
+            /* padding: 0 4.4375rem; */
+            /* justify-content: space-around; */
+        }
+
+        .navlink:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        .call {
+            /* background-color: darkseagreen; */
+            justify-content: flex-end;
+            flex: 1;
+            cursor: pointer;
+        }
+
+        .logo,
+        .navlinks,
+        .call {
+            display: flex;
+        }
+        .container{
+            width: 90%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            /* flex-direction: column; */
+        }
+        .all{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            /* flex-direction: column; */
+
+        }
+
+        .house img{
+            height: 60vh;
+            filter: drop-shadow(0px 8px 6px black);
+        }
+        .house{
+            flex: 1;
+        }
+        .btn{
+          width: 90%;
+          margin: auto;
+          cursor: pointer;
+          font-family: 'Poppins', sans-serif;
+          /* font-family: 'Poppins', sans-serif; */
+        }
+        .prw{
+            font-size: 30px;
+            border: 2px solid #ccbbcc;
+            color: black;
+            background-color: transparent;
+            font-family: 'Poppins', sans-serif;
+        }
+        .vprw{
+            font-size: 30px;
+            border: none;
+            color: white;
+            background-color: grey;
+            padding-left: 10px;
+            font-family: 'Poppins', sans-serif;
+        }
+        .big{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            opacity: 0.4;
+            z-index: -1;
+            height: 90vh;
+        }
+        .mid{
+            position: absolute;
+            top: 0px;
+            right:35%;
+            opacity: 0.6;
+            z-index: -1;
+            height: 90vh;
+        }
+        .small{
+            position: absolute;
+            top: 200px;
+            left:10%%;
+            opacity: 2;
+            z-index: -1;
+            /* height: vh; */
+        }
+        @media screen and (max-width: 780px){
+            .container{
+                flex-direction: column;
+            }
+            .btn{
+                display: flex;
+                justify-content:center;
+                align-items: center;
+            }
+            .house img{
+                height: 50vh;
+            }
+            .big{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            opacity: 0.4;
+            z-index: -1;
+            height: 60vh;
+        }
+        .mid{
+            position: absolute;
+            top: 0px;
+            right:35%;
+            opacity: 0.3;
+            z-index: -1;
+            height: 60vh;
+        }
+        .small{
+            position: absolute;
+            top: 200px;
+            left:10%%;
+            opacity: 2;
+            z-index: -1;
+            /* height: vh; */
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="github.svg" alt="">
+            <h4>badhiyaa</h4>
+        </div>
+        <nav>
+            <ul class="navlinks">
+                <li><a href="https://anandtiwaari.github.io/scicalc/at.html" class="navlink">Prices</a></li>
+                <li><a href="https://anandtiwaari.github.io/atgame" class="navlink">Services</a></li>
+                <li><a href="" class="navlink">About</a></li>
+                <!-- <li><a href="" class="navlink">About Us</a></li> -->
+            </ul>
+        </nav>
+        <div class="call">
+            <img src="phone.svg" alt="">
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <div class="all">
+                <h1>Aaj kuchhh tufani karte hai</h1>
+                <p>BAaton ko teri hamm bhulaa na sake hoke juda hammm na judaa ho sakkee</p>
+            </div>
+            <!-- <div class="btn">
+                <button>President</button>
+                <button>Vice-President</button>
+            </div> -->
+            <div class="house">
+                <img src="house.png" alt="">
+            </div>
+        </section>
+        <div class="btn">
+            <button class="prw">President</button>
+            <button class="vprw">Vice-President</button>
+        </div>
+        <div>
+
+            <img  class="big" src="big-eclipse.svg" alt="">
+            <img  class="mid" src="mid-eclipse.svg" alt="">
+            <img  class="small" src="small-eclipse.svg" alt="">
+        </div>
+    </main>
+</body>
+
+</html>
