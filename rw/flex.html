@@ -105,6 +105,7 @@
         .house img{
             height: 60vh;
             filter: drop-shadow(0px 8px 6px black);
+            animation: bhau 1s linear;
         }
         .house{
             flex: 1;
@@ -128,7 +129,7 @@
             border: none;
             color: white;
             background-color: grey;
-            padding-left: 10px;
+            margin-left: 15px;
             font-family: 'Poppins', sans-serif;
         }
         .big{
@@ -155,17 +156,28 @@
             z-index: -1;
             /* height: vh; */
         }
+        @keyframes bhau{
+            0%{
+                opacity: 0;
+                transform: translateY(-80px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
         @media screen and (max-width: 780px){
             .container{
                 flex-direction: column;
             }
             .btn{
                 display: flex;
+                text-align: center;
                 justify-content:center;
                 align-items: center;
             }
             .house img{
-                height: 50vh;
+                height: 35vh;
             }
             .big{
             position: absolute;
@@ -174,6 +186,10 @@
             opacity: 0.4;
             z-index: -1;
             height: 60vh;
+        }
+        .all{
+            text-align: center;
+            margin-top: 30px;
         }
         .mid{
             position: absolute;
@@ -191,6 +207,18 @@
             z-index: -1;
             /* height: vh; */
         }
+        /* .house{
+            height: 45vh;
+        }
+         */
+        }
+        @media screen and (max-width: 430px){
+         .vprw{
+             /* padding: 0px 3px; */
+             margin-right:3px;
+             font-size: 1.3rem;
+         }
+
         }
     </style>
 </head>
