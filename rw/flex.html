@@ -87,14 +87,16 @@
         .call {
             display: flex;
         }
-        .container{
+
+        .container {
             width: 90%;
             margin: auto;
             display: flex;
             align-items: center;
             /* flex-direction: column; */
         }
-        .all{
+
+        .all {
             flex: 1;
             display: flex;
             flex-direction: column;
@@ -102,29 +104,33 @@
 
         }
 
-        .house img{
+        .house img {
             height: 60vh;
             filter: drop-shadow(0px 8px 6px black);
             animation: bhau 2s linear;
         }
-        .house{
+
+        .house {
             flex: 1;
         }
-        .btn{
-          width: 90%;
-          margin: auto;
-          cursor: pointer;
-          font-family: 'Poppins', sans-serif;
-          /* font-family: 'Poppins', sans-serif; */
+
+        .btn {
+            width: 90%;
+            margin: auto;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            /* font-family: 'Poppins', sans-serif; */
         }
-        .prw{
+
+        .prw {
             font-size: 30px;
             border: 2px solid #ccbbcc;
             color: black;
             background-color: transparent;
             font-family: 'Poppins', sans-serif;
         }
-        .vprw{
+
+        .vprw {
             font-size: 30px;
             border: none;
             color: white;
@@ -132,7 +138,8 @@
             margin-left: 15px;
             font-family: 'Poppins', sans-serif;
         }
-        .big{
+
+        .big {
             position: absolute;
             top: 0px;
             right: 0px;
@@ -140,85 +147,208 @@
             z-index: -1;
             height: 90vh;
         }
-        .mid{
+
+        .mid {
             position: absolute;
             top: 0px;
-            right:35%;
+            right: 35%;
             opacity: 0.6;
             z-index: -1;
             height: 90vh;
         }
-        .small{
+
+        .small {
             position: absolute;
             top: 200px;
-            left:10%%;
+            left: 10%%;
             opacity: 2;
             z-index: -1;
             /* height: vh; */
         }
-        @keyframes bhau{
-            0%{
+
+        @keyframes bhau {
+            0% {
                 opacity: 0;
                 transform: translateY(-80px);
             }
-            100%{
+
+            100% {
                 opacity: 1;
                 transform: translateY(0px);
             }
         }
-        @media screen and (max-width: 780px){
-            .container{
+
+        @media screen and (max-width: 780px) {
+            .container {
                 flex-direction: column;
             }
-            .btn{
+
+            .btn {
                 display: flex;
                 text-align: center;
-                justify-content:center;
+                justify-content: center;
                 align-items: center;
             }
-            .house img{
+
+            .house img {
                 height: 35vh;
             }
-            .big{
-            position: absolute;
-            top: 0px;
-            right: 0px;
-            opacity: 0.4;
-            z-index: -1;
-            height: 60vh;
-        }
-        .all{
-            text-align: center;
-            margin-top: 30px;
-        }
-        .mid{
-            position: absolute;
-            top: 0px;
-            right:35%;
-            opacity: 0.3;
-            z-index: -1;
-            height: 60vh;
-        }
-        .small{
-            position: absolute;
-            top: 200px;
-            left:10%%;
-            opacity: 2;
-            z-index: -1;
-            /* height: vh; */
-        }
-        /* .house{
+
+            .big {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                opacity: 0.4;
+                z-index: -1;
+                height: 60vh;
+            }
+
+            .all {
+                text-align: center;
+                margin-top: 30px;
+            }
+
+            .mid {
+                position: absolute;
+                top: 0px;
+                right: 35%;
+                opacity: 0.3;
+                z-index: -1;
+                height: 60vh;
+            }
+
+            .small {
+                position: absolute;
+                top: 200px;
+                left: 10%%;
+                opacity: 2;
+                z-index: -1;
+                /* height: vh; */
+            }
+
+            /* .house{
             height: 45vh;
         }
          */
         }
-        @media screen and (max-width: 430px){
-         .vprw{
-             /* padding: 0px 3px; */
-             margin-right:3px;
-             font-size: 1.3rem;
-         }
 
+        @media screen and (max-width: 430px) {
+            .vprw {
+                /* padding: 0px 3px; */
+                margin-right: 3px;
+                font-size: 1.3rem;
+            }
+
+        }
+
+        .new {        
+            margin-top: 50px;
+            margin-left: 70px;
+             /* position: absolute;
+             top: 90%; */
+            width: 90%;
+            /* height: 90%; */
+            /* left: 9%; */
+            /* margin-top: auto; */
+            /* margin: auto; */
+            /* border: 2px solid lightblue; */
+        }
+        .new::before {
+            position: absolute;
+            left: 0;
+            /* border: 2px solid brown; */
+            right: 0;
+            height: 100%;
+            width: 90%;
+            margin: auto;
+            content: "";
+            border-radius: 12px;
+            /* background: url(backgru.svg)center center/cover; */
+            background-color:#C9B48D;
+            opacity: 0.5;
+            z-index: -1;
+        }
+        .subn{
+            display: flex;
+            flex-direction: column;
+            font-size: x-large;
+            margin: 80px 0px;
+            color:black;
+            font-weight: 600;
+            /* justify-content: center; */
+            flex: 1;
+        }
+        .atb h4{
+            text-decoration: underline;
+            display: flex;
+            font-size: 1.875rem;
+            /* text-align: right; */
+            justify-content: center;
+        }
+        .atb {
+            /* border: 6px solid rgb(240, 107, 18); */
+          border-radius: 5%;
+          animation: atb 1.5s linear;
+          filter: drop-shadow(0 10px 15px  black);
+        }
+        @keyframes atb{
+            0%{
+                opacity: 0;
+                transform: translateX(-80px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+        @keyframes ctb{
+            0%{
+                opacity: 0;
+                transform: translateX(80px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+        @keyframes btb{
+            0%{
+                opacity: 0;
+                transform: translatey(-80px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+        .btb h4{
+            font-size: 1.875rem;
+            display: flex;
+            text-decoration: underline;
+            /* text-align: right; */
+            justify-content: flex-end;
+        }
+        .btb {
+           /* border: 6px solid grey; */
+          filter: drop-shadow(0 10px 15px  black);
+           border-radius: 12px;
+          animation: btb 1.5s linear;
+        }
+        .ctb h4{
+            font-size: 1.875rem;
+            display: flex;
+            text-decoration: underline;
+            /* text-align: right; */
+            justify-content: flex-start;
+        }
+        .ctb {
+          animation: ctb 1.5s linear;
+          filter: drop-shadow(0 10px 15px  black);
+            /* border: 6px solid ; */
+            border-radius: 12px;
+        }
+        .bt{
+            /* justify-content: flex-s; */
         }
     </style>
 </head>
@@ -231,7 +361,7 @@
         </div>
         <nav>
             <ul class="navlinks">
-                <li><a href="https://anandtiwaari.github.io/scicalc/at.html" class="navlink">Prices</a></li>
+                <li><a href="https://anandtiwaari.github.io/scicalc/at.html" class="navlink">SignUp</a></li>
                 <li><a href="https://anandtiwaari.github.io/atgame" class="navlink">Services</a></li>
                 <li><a href="" class="navlink">About</a></li>
                 <!-- <li><a href="" class="navlink">About Us</a></li> -->
@@ -261,10 +391,27 @@
         </div>
         <div>
 
-            <img  class="big" src="big-eclipse.svg" alt="">
-            <img  class="mid" src="mid-eclipse.svg" alt="">
-            <img  class="small" src="small-eclipse.svg" alt="">
+            <img class="big" src="big-eclipse.svg" alt="">
+            <img class="mid" src="mid-eclipse.svg" alt="">
+            <img class="small" src="small-eclipse.svg" alt="">
         </div>
+        <section class="new">
+            <div class="subn atb">
+                <h4>sahi jaa raha hai bhai mere</h4>
+                <p class="para1">Zindagi Ek safar hai suhana yaha kall kya hou kisne jaana -maut aani hai aayegi ek din
+                    jaan jaani hai jaayegi ikk dinn zindagi ek safar hai suhana yaha kall kya hou kisne jaana</p>
+            </div>
+            <div class="subn btb">
+                <h4>Theek hai Theek hai</h4>
+                <p class="para1">Kabb tak javab degaa sabke saavalon kaa mehnat hard hogii zindagi kamal hogaa meri
+                    fikkar naa kar haa mai kaama lungaa</p>
+            </div>
+            <div class="subn ctb" >
+                <h4>kadak bann -falak takk</h4>
+                <p class="para1">kadak bann ladak bann mat bann tu dhokla sirff pateli tuu maartaa hai andarr se khokhla
+                    -tu triplaa dikhata mai chalataaa betaa rokkla</p>
+            </div>
+        </section>
     </main>
 </body>
 
