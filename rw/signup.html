@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            font-family: 'Poppins', sans-serif;
+        }
+        body::before{
+            background-color: #CEECAD;
+            /* background:url(log1.jpg)center center/cover; */
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            left: 0px;
+            top:0px;
+            z-index: -1;
+            opacity: 1;
+        }
+        #frm{
+            animation: login 1.2s linear;
+            filter: drop-shadow(0 5px 3px black);
+            /* box-shadow: 2px 2px 2px 2px black; */
+            background-color: #F6CE56;
+            display: inline;
+            /* display: flex; */
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
+            text-align: center;
+            align-items: center;
+            position: absolute;
+            left: 40%;
+            top:20%;
+            border-radius: 12px;
+            /* margin: 15px; */
+            /* border: 5px solid lightblue; */
+
+        }
+        @keyframes login{
+            0%{
+                opacity: 0;
+                transform: translateY(-80px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+        .alu{
+            margin: 22px 18px;
+            /* background-color: grey; */
+        }
+        .alu input{
+            /* font-size: 24px; */
+            cursor: pointer;
+            /* border-radius: 12px; */
+            padding: 12px 42px;
+            border: none;
+            background-color: transparent;
+            border-bottom:2px solid  rgb(149, 64, 8);
+        }
+        @media screen and (max-width: 638px){
+            #frm{
+                left:2%;
+                right: 2%;
+                bottom: 2%;
+                top: 3%;
+                height: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="frm">
+        <div class="alu" >
+            Firstname:
+            <input type="text" placeholder="Enter Your First Name">
+        </div>
+        <div class="alu" >
+            Lastname:
+            <input type="text" placeholder="Enter Your Last Name">
+        </div>
+        <div class="alu" >
+            username:
+            <input type="text" placeholder="username">
+        </div>
+        <div class="alu" >
+            Email:
+            <input type="email" placeholder="xyz@abc.com">
+        </div>
+        <div class="alu" >
+            Mobile:
+            <input  type="number" placeholder="1123336552">
+        </div>
+        <div class="alu" >
+            Gender:
+           Male <input type="radio"> Female<input type="radio">
+            
+        </div>
+        <div class="alu" >
+            <button class="btn1">SignUp</button>
+            <!-- <button class="btn2"></button> -->
+        </div>
+    </form>
+</body>
+</html>
