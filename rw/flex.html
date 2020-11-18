@@ -231,12 +231,50 @@
         }
          */
         }
+        @keyframes atb{
+            0%{
+                opacity: 0;
+                transform: translateX(-80px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+        @keyframes ctb{
+            0%{
+                opacity: 0;
+                transform: translateX(80px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+        @keyframes btb{
+            0%{
+                opacity: 0;
+                transform: translatey(-80px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
 
         @media screen and (max-width: 430px) {
             .vprw {
                 /* padding: 0px 3px; */
                 margin-right: 3px;
                 font-size: 1.3rem;
+            }
+            .subn{
+                right: 52px;
+                position: relative;
+                margin-right: 12px;
+            }
+            .new{
+                margin-left: 200px;
             }
 
         }
@@ -270,13 +308,14 @@
         }
         .subn{
             display: flex;
+            margin-right: 12px;
             flex-direction: column;
-            font-size: x-large;
+            font-size:large;
             margin: 80px 0px;
             color:black;
             font-weight: 600;
             /* justify-content: center; */
-            flex: 1;
+            /* flex: 1; */
         }
         .atb h4{
             text-decoration: underline;
@@ -291,36 +330,7 @@
           animation: atb 1.5s linear;
           filter: drop-shadow(0 10px 15px  black);
         }
-        @keyframes atb{
-            0%{
-                opacity: 0;
-                transform: translateX(-80px);
-            }
-            100%{
-                opacity: 1;
-                transform: translateX(0px);
-            }
-        }
-        @keyframes ctb{
-            0%{
-                opacity: 0;
-                transform: translateX(80px);
-            }
-            100%{
-                opacity: 1;
-                transform: translateX(0px);
-            }
-        }
-        @keyframes btb{
-            0%{
-                opacity: 0;
-                transform: translatey(-80px);
-            }
-            100%{
-                opacity: 1;
-                transform: translateX(0px);
-            }
-        }
+      
         .btb h4{
             font-size: 1.875rem;
             display: flex;
