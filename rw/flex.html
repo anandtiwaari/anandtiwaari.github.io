@@ -468,6 +468,8 @@
           background: url(log21.jpg)center center/cover;
         }
         .in{
+            display: flex;
+            flex-direction: column;
             font-size: x-large;
             /* border: 3px solid black; */
             padding: 6.1875rem 5.75rem;
@@ -498,7 +500,6 @@
         .p_ass{
 text-align: center;
             font-weight: bolder;
-            padding: 8px 80px;
             color: black;
             border: none;
             background-color: transparent;
@@ -534,21 +535,27 @@ text-align: center;
           height: 35%;
           width: 90%;
           margin: auto;
-          top: 180.5%;
+          top: 185.5%;
           left: 3%;
           border-radius: 12px;
-          z-index: -1;
+          z-index: -1;  
           opacity: 0.5;
           background: url(log21.jpg)center center/cover;
         }
         .in{
+            width: 100%;
+            /* margin: auto; */
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            /* position: absolute; */
             font-size: x-large;
             /* border: 3px solid black; */
             padding: 2.1875rem 1.75rem;
             margin: 6.25rem;    
             background-color: whitesmoke;
             border-radius: 22px;
-            margin-left: 12px;
+            /* margin-left: 22px; */
         }
         .subn{
             right:5px ;
@@ -556,11 +563,19 @@ text-align: center;
         .new::before{
             right: 0;
             left: 6%;
-            height: 88%;
+            height: 95%;
             width: 90%;
         }
         .new{
             margin-left: 25px;
+        }
+        .u_ser{
+            /* padding: ; */
+            padding: 8px 20px;
+        }
+        .p_ass{
+            /* padding: ; */
+            padding: 8px 20px;
         }
       }
     </style>
