@@ -443,7 +443,7 @@
             align-items: center;
             justify-content: center; */
         /* } */
-        .anew{
+        .anew {
             width: 90%;
             margin-top: 50px;
             margin-left: 70px;
@@ -452,132 +452,150 @@
             display: flex;
             justify-content: center;
         }
-        .anew::before{
+
+        .anew::before {
             /* margin-top: 50px;
             margin-left: 70px; */
-          position: absolute;
-          content: "";
-          height: 93%;
-          width: 90%;
-          margin: auto;
-          top: 171.5%;
-          left: 5%;
-          border-radius: 12px;
-          z-index: -1;
-          opacity: 0.5;
-          background: url(log21.jpg)center center/cover;
+            position: absolute;
+            content: "";
+            height: 93%;
+            width: 90%;
+            margin: auto;
+            top: 171.5%;
+            left: 5%;
+            border-radius: 12px;
+            z-index: -1;
+            opacity: 0.5;
+            background: url(log21.jpg)center center/cover;
         }
-        .in{
+
+        .in {
             display: flex;
             flex-direction: column;
             font-size: x-large;
             /* border: 3px solid black; */
             padding: 6.1875rem 5.75rem;
-            margin: 6.25rem;    
+            margin: 6.25rem;
             background-color: whitesmoke;
             border-radius: 22px;
         }
-        .in:hover{
-           filter: drop-shadow(0 2px 3px black);
+
+        .in:hover {
+            filter: drop-shadow(0 2px 3px black);
         }
-        .in h2{
+
+        .in h2 {
             text-align: center;
             color: #327CF8;
         }
-        .alag{
+
+        .alag {
 
             margin: 26px;
         }
-        .u_ser{
+
+        .u_ser {
             text-align: center;
             font-weight: bolder;
             color: black;
             border: none;
-            border-bottom:2px solid #327CF8;
+            border-bottom: 2px solid #327CF8;
             padding: 8px 80px;
             background-color: transparent;
         }
-        .p_ass{
-text-align: center;
+
+        .p_ass {
+            padding: 8px 80px;
+            text-align: center;
             font-weight: bolder;
             color: black;
             border: none;
             background-color: transparent;
             border-bottom: 2px solid #327CF8;
         }
-      .stn{
-          display: flex;
-          justify-content: space-around;
-          text-align: center;
-          align-items: center;
-          font-family: 'Poppins', sans-serif;
-          padding: 15px 50px;
-          border: none;
-          background-color: #B4DCEC;
-          border-radius: 20px;
-          font-size: 18px;
-      }
-      .stn:hover{
-          cursor: pointer;
-          background-color:#327CF8;
-      }
-      .blag{
-        font-family: 'Poppins', sans-serif;
-          display: flex;
-          justify-content: center;
-      }
-      @media screen and (max-width: 500px){
-        .anew::before{
-            /* margin-top: 50px;
-            margin-left: 70px; */
-          position: absolute;
-          content: "";
-          height: 35%;
-          width: 90%;
-          margin: auto;
-          top: 190.5%;
-          left: 4%;
-          border-radius: 12px;
-          z-index: -1;  
-          opacity: 0.5;
-          background: url(log21.jpg)center center/cover;
-        }
-        .in{
-            width: 100%;
-            /* margin: auto; */
+
+        .stn {
             display: flex;
             justify-content: space-around;
-            flex-direction: column;
-            /* position: absolute; */
-            font-size: x-large;
-            /* border: 3px solid black; */
-            padding: 2.1875rem 1.75rem;
-            margin: 6.25rem;    
-            background-color: whitesmoke;
-            border-radius: 22px;
-            /* margin-left: 22px; */
+            text-align: center;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            padding: 15px 50px;
+            border: none;
+            background-color: #B4DCEC;
+            border-radius: 20px;
+            font-size: 18px;
         }
-        .subn{
-            right:5px ;
+
+        .stn:hover {
+            cursor: pointer;
+            background-color: #327CF8;
         }
-        .new::before{
-            right: 0;
-            left: 6%;
-            height: 95%;
-            width: 90%;
+
+        .blag {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
         }
-        .new{
-            margin-left: 25px;
+
+        @media screen and (max-width: 500px) {
+            .anew::before {
+                /* margin-top: 50px;
+            margin-left: 70px; */
+                position: absolute;
+                content: "";
+                height: 35%;
+                width: 90%;
+                margin: auto;
+                top: 190.5%;
+                left: 4%;
+                border-radius: 12px;
+                z-index: -1;
+                opacity: 0.5;
+                background: url(log21.jpg)center center/cover;
+            }
+
+            .in {
+                width: 100%;
+                /* margin: auto; */
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                /* position: absolute; */
+                font-size: x-large;
+                /* border: 3px solid black; */
+                padding: 2.1875rem 1.75rem;
+                margin: 6.25rem;
+                background-color: whitesmoke;
+                border-radius: 22px;
+                /* margin-left: 22px; */
+            }
+
+            .subn {
+                right: 5px;
+            }
+
+            .new::before {
+                right: 0;
+                left: 6%;
+                height: 95%;
+                width: 90%;
+            }
+
+            .new {
+                margin-left: 25px;
+            }
+
+            .u_ser {
+                /* padding: ; */
+                padding: 8px 20px;
+            }
+
+            .p_ass {
+                /* padding: ; */
+                padding: 8px 20px;
+            }
         }
-        .u_ser{
-            /* padding: ; */
-            padding: 8px 20px;
-        }
-        .p_ass{
-            /* padding: ; */
-            padding: 8px 20px;
-        }
-      }
     </style>
 </head>
 
@@ -603,7 +621,8 @@ text-align: center;
         <section class="container">
             <div class="all">
                 <h1>The White house-President</h1>
-                <p>BAaton ko teri hamm bhulaa na sake hoke juda hammm na judaa ho sakkee</p>
+                <p>George Washington, selected the site for the White House in 1791. The cornerstone was laid in 1792
+                    and a competition design submitted by ...</p>
             </div>
             <!-- <div class="btn">
                 <button>President</button>
