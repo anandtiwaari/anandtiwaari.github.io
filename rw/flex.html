@@ -463,7 +463,7 @@
             margin: auto;
             top: 171.5%;
             left: 5%;
-            border-radius: 12px;
+            border-radius: 44px;
             z-index: -1;
             opacity: 0.5;
             background: url(log21.jpg)center center/cover;
@@ -596,6 +596,71 @@
                 padding: 8px 20px;
             }
         }
+        .consec{
+            /* border: 2px solid black; */
+            /* display: flex; */
+            width: 90%;
+            margin: auto;
+            justify-content: center;
+        }
+        .consec::before{
+            background: url('mulakat.jpg')center center/cover;
+            position: absolute;
+            border-radius: 12px;
+            top: 276%;
+            right: 5%;
+            height: 9%;
+            width: 90%;
+            content: "";
+            z-index: -1;
+            opacity: 0.6;
+        }
+        .containere{
+            flex-wrap: wrap;
+            display: flex;
+            /* align-items: center;
+            text-align: center;
+            align-content: center; */
+            /* justify-content: space-around; */
+            /* border: 2px solid cornflowerblue; */
+        }
+        .bsd{
+            display: flex;
+            /* flex-wrap: ; */
+            justify-content: space-around;
+            /* flex-wrap: ; */
+        }
+        .facebook{
+            flex: 1;
+            /* transform: translate(-80px); */
+        }
+        .facebook:hover{
+            flex: 1;
+            transform: translatey(-10px);
+        }
+        .insta{
+            flex: 1;
+        }
+        .insta:hover{
+            transform: translatey(-10px);
+            flex: 1;
+        }
+        .twitter{
+            flex: 1;
+        }
+        .twitter:hover{
+            transform: translatey(-10px);
+            flex: 1;
+        }
+        @media screen and  (max-width: 380px){
+            .consec::before{
+                top:302%;
+                display: flex;
+            }
+            /* .conatinere{
+                border: 3px solid red;
+            } */
+        }
     </style>
 </head>
 
@@ -679,6 +744,19 @@
                 <p class="user alag"><input type="text" class="u_ser" placeholder="username"></p>
                 <p class="pass alag"><input type="password" class="p_ass" placeholder="Password"></p>
                 <p class="user blag"><button class="stn">Continue</button></p>
+            </div>
+        </section>
+        <section class="consec">
+            <div class="containere">
+                <div class="facebook bsd">
+                    <a href=""><img src="facebook.svg" alt="facebook"></a>
+                </div>
+                <div class="insta bsd">
+                    <a href=""><img src="insta.svg" alt="insta"></a>
+                </div>
+                <div class="twitter bsd">
+                    <a href=""><img src="twiteer.svg" alt="twitter"></a>
+                </div>
             </div>
         </section>
     </main>
