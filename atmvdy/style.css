@@ -21,14 +21,85 @@ body{
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
 }
-header{
-    font-size: 2rem;
+html, body{
+      height: 100%;
 }
+
+header{
+    font-size: 2.5rem;
+    color: white;
+    margin: 20px;
+    text-align: center;
+}
+h1 pre{
+      display: table-cell;
+      margin:0;
+      padding:0;
+      animation: animate 2s linear infinite;
+}
+h1 pre:nth-child(1){
+animation-delay: 0s;
+}
+}
+h1 pre:nth-child(2){
+animation-delay: 0.25s;
+}
+}
+h1 pre:nth-child(3){
+animation-delay: 0.5s;
+}
+}
+h1 pre:nth-child(4){
+animation-delay: 0.75s;
+}
+}
+h1 pre:nth-child(5){
+animation-delay: 1s;
+}
+}
+h1 pre:nth-child(7){
+animation-delay: 1.25s;
+}}
+h1 pre:nth-child(8){
+animation-delay: 1.75s;
+}
+
+@keyframes animate
+{
+      0%,100%
+      {
+            color: cornsilk;
+            filter: blur(2px);
+            text-shadow:    0 0 10px #00b3ff,
+                                    0 0 20px #00b3ff,
+                                    0 0 40px #00b3ff,
+                                    0 0 80px #00b3ff,
+                                    0 0 120px #00b3ff,
+                                    0 0 200px #00b3ff,
+                                    0 0 300px #00b3ff,
+                                    0 0 400px #00b3ff;
+
+      }
+      0%,95%
+      {
+            color: darkgrey;
+            filter: blur(0px);
+            text-shadow: none;
+      }
+}
+
 header,form{
     min-height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+form{
+      margin-top: -4%;
+}
+.todo-input{
+      border: 3px solid #0000cd;
+      border-radius: 50px;
 }
 form input,form button{
     padding: 0.5rem;
@@ -37,19 +108,21 @@ form input,form button{
     background: white;
 }
 form button{
-    color: #d88771;
+    color: #ff7f24;
     background: white;
     cursor: pointer;
     transition: all 0.3s ease;
+    border-radius:15px;
 }
 form button:hover{
-    background: #d88771;
+    background: #ff7f24;
     color: white;
 }
 .todo-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 45%;
 }
 .todo-list{
     min-width: 30%;
@@ -57,32 +130,73 @@ form button:hover{
 }
 .todo{
     margin: 0.5rem;
-    background: white;
+    background: cornsilk;
     color: black;
     font-size: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+     border-radius: 5px;
 }
 .todo li{
     flex: 1;
 }
 .trash-btn,.complete-btn{
     background: #ff6f47;
-    color: white;
+    color: cornsilk;
     border: none;
     padding: 1rem;
     font-size: 1rem;
+     border-radius: 5px;
 }
 .trash-btn{
-    background-color: red;
+    background-color: darkred;
 }
 .complete-btn{
-    background-color: rgb(47, 230, 47);
+    background-color: roseybrown;
 }
 .todo-item{
     /* padding: 0rem 0.5rem; */
 }
 .fa-trash,.fa-check{
     pointer-events: none;
+}
+
+/*Footer*/
+.footer{
+      background: #303036;
+      color: white;
+      height: 100px;
+      position: relative;
+}
+.footer .footer-content{
+      background: #343a40;
+      height:65px;
+}
+.footer .footer-bottom{
+      background: #343a40;
+      color: gainsboro;
+      height: 40px;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      padding-top: 20px;
+      margin-bottom: 10px;
+}
+.about{
+      margin-left: 10px;
+      margin-top: 10px;
+      color: darkgrey;
+}
+.link{
+      text-align: center;
+      color: darkgrey;
+}
+.contact{
+      text-align: right;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      color: darkgrey;
 }
