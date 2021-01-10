@@ -111,7 +111,7 @@ button {
     border-radius: 12px;
   }
   .select-image {
-
+      color: yellowgreen;
     height: 360px;
     width: 350px;
     border-radius:12px;
@@ -156,11 +156,12 @@ button {
     padding-right: 12px;
     outline: none;
   }
-  .bw img{
-      position: absolute;
-      left: 45%;
-
-  }
+ .ctn{
+     position: absolute;
+     left: 40%;
+     color:#fff;
+     border: 1px solid orange;
+ }
   /* body{
       background-color: aquamarine;
   } */

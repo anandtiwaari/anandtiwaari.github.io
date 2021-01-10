@@ -6,12 +6,17 @@ let Grey=document.querySelector('#Grey');
 let Blur=document.querySelector('#Blur');
 let Sepia=document.querySelector('#Sepia');
 let Hue=document.querySelector('#Hue');
+let darki=document.querySelector('.ctn');
+let contain=document.querySelector('.container')
+// let body=document.querySelectorAll('body')
 //Event-Listeners
 btn.addEventListener('click',enter);
 Grey.addEventListener('click',Blurfil)
 Blur.addEventListener('click',Sepiafil)
 Sepia.addEventListener('click',greyfil)
 Hue.addEventListener('click',Huefil)
+darki.addEventListener('click',alag)
+
 
 
 //Functions
@@ -33,4 +38,23 @@ function Sepiafil(){
 }
 function Huefil(){
     image=image.style.filter="hue-rotate(182deg)"
+}
+
+function alag(){
+    document.body.style.backgroundColor="black";
+    contain.style.backgroundColor="black";
+    // darki.style.backgroundColor="black";
+    if(darki.style.backgroundColor=='black')
+    {
+        document.body.style.backgroundColor="#fff";
+        contain.style.backgroundColor="#fff";
+        darki.style.backgroundColor="#fff";
+    }
+    else
+    {
+        document.body.style.backgroundColor="black";
+        contain.style.backgroundColor="black";
+        darki.style.backgroundColor="black";
+    }
+    // console.log("miss tujhe")
 }
