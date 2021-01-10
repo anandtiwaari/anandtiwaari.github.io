@@ -114,6 +114,7 @@ button {
 
     height: 360px;
     width: 350px;
+    border-radius:12px;
 
   }
   .right {
