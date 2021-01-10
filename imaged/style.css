@@ -101,11 +101,16 @@ button {
     top:48%;
     height: 360px;
     width: 350px;
-    border: 2px solid black;
+    border: none;
+    background: none;
+    box-shadow: 3px 3px 17px 2px rgb(20, 19, 19);
+    /* border: 2px solid black; */
   }
   .select-image {
+
     height: 360px;
     width: 350px;
+
   }
   .right {
     position: absolute;
@@ -114,6 +119,7 @@ button {
     left: 2%;
     display: flex;
     width: 40%;
+
     /* margin-right: 2px; */
     /* border: 2px solid black; */
   }
@@ -132,7 +138,7 @@ button {
     padding:0px 25px;
     /* padding: 0 34px; */
   }
-  body{
+  /* body{
       background-color: aquamarine;
-  }
+  } */
 }
