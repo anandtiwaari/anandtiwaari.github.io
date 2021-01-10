@@ -97,20 +97,20 @@ button {
   }
   .mid-image {
     position: absolute;
-    left: 10%;
-    top:55%;
+    left: 5%;
+    top:52%;
     height: 300px;
     width: 350px;
     border: 2px solid black;
   }
   .select-image {
-    height: 190px;
-    width: 290px;
+    height: 295px;
+    width: 345px;
   }
   .right {
     position: absolute;
     /* left: 30%; */
-    top: 45%;
+    top: 42%;
     left: 2%;
     display: flex;
     width: 40%;
