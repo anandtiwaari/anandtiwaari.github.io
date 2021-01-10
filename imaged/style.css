@@ -78,6 +78,7 @@ button {
 
 @media screen and (max-width: 420px) {
   .left {
+      padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,7 +87,7 @@ button {
   }
   .container {
     background-color: #494850;
-    width: 85%;
+    width: 90%;
     height: 0%;
     padding-bottom: 0px;
     margin-top: 8px;
@@ -102,11 +103,15 @@ button {
     width: 300px;
     border: 2px solid black;
   }
+  .select-image {
+    height: 190px;
+    width: 290px;
+  }
   .right {
     position: absolute;
     /* left: 30%; */
     top: 45%;
-    left: 5%;
+    left: 2%;
     display: flex;
     width: 40%;
     /* margin-right: 2px; */
