@@ -76,7 +76,7 @@ button {
   width: 800px;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 350px) {
   .left {
     display: flex;
     flex-direction: row;
