@@ -101,7 +101,7 @@ button {
   .mid-image {
     position: absolute;
     left: 5%;
-    top:60%;
+    top:55%;
     height: 360px;
     width: 350px;
     border: none;
@@ -120,7 +120,7 @@ button {
   .right {
     position: absolute;
     /* left: 30%; */
-    top: 45%;
+    top: 47%;
     left: 2%;
     display: flex;
     width: 40%;
@@ -159,8 +159,9 @@ button {
  .ctn{
      position: absolute;
      left: 40%;
-     color:#fff;
+     color:#0000;
      border: 1px solid orange;
+     outline: none;
  }
   /* body{
       background-color: aquamarine;
