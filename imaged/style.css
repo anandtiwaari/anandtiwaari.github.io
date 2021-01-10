@@ -99,8 +99,8 @@ button {
     position: absolute;
     left: 10%;
     top:55%;
-    height: 200px;
-    width: 300px;
+    height: 300px;
+    width: 350px;
     border: 2px solid black;
   }
   .select-image {
@@ -129,7 +129,7 @@ button {
     /* padding-right: 100px; */
   }
   .slider {
-    padding-right: 11px;
+    padding:0px 25px;
     /* padding: 0 34px; */
   }
   body{
