@@ -79,7 +79,7 @@ button {
 @media screen and (max-width: 420px) {
   .left {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -96,16 +96,17 @@ button {
   }
   .mid-image {
     position: absolute;
-    left: 30%;
-    top:37%;
+    left: 10%;
+    top:55%;
     height: 200px;
-    width: 250px;
+    width: 300px;
     border: 2px solid black;
   }
   .right {
     position: absolute;
     /* left: 30%; */
-    top: 18%;
+    top: 45%;
+    left: 5%;
     display: flex;
     width: 40%;
     /* margin-right: 2px; */
