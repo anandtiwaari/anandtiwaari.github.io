@@ -159,9 +159,10 @@ button {
  .ctn{
      position: absolute;
      left: 40%;
-     color:#0000;
+     color:black;
      border: 1px solid orange;
      outline: none;
+     border-radius: 12px;
  }
   /* body{
       background-color: aquamarine;
