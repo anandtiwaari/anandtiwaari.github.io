@@ -99,13 +99,13 @@ button {
     position: absolute;
     left: 5%;
     top:48%;
-    height: 320px;
+    height: 360px;
     width: 350px;
     border: 2px solid black;
   }
   .select-image {
-    height: 295px;
-    width: 345px;
+    height: 360px;
+    width: 350px;
   }
   .right {
     position: absolute;
