@@ -45,7 +45,7 @@ function filt() {
     Hueval +
     "deg)";
 }
-0
+
 function sir(s) {
   if (s.keyCode == 13) {
     let inputvalue = input.value; //input ki value variable mei store karayi hai
@@ -116,3 +116,17 @@ function alag() {
 }
 
 
+let dtn = document.querySelector('.dtn');
+// let img = document.querySelector('img');
+ 
+ 
+// Must use FileSaver.js 2.0.2 because 2.0.3 has issues.
+dtn.addEventListener('click', () => {
+    let imagePath = image.getAttribute('src');
+    let fileName = getFileName(imagePath);
+    saveAs(imagePath, fileName);
+});
+ 
+function getFileName(str) {
+    return str.substring(str.lastIndexOf('/') + 1)
+}

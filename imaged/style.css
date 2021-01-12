@@ -102,7 +102,7 @@ button {
   display: flex;
   position: absolute;
   top: 70%;
-  left: 8%;
+  left: 14%;
   border: 2px dashed black;
   background-image: linear-gradient(120deg,rgb(121, 209, 238),rgb(111, 96, 243));
   padding: 6px 14px;
@@ -121,6 +121,18 @@ button {
 .ctn{
   margin-left: 8px;
   
+}
+.dtn{
+  position: absolute;
+  display: flex;
+  left: 2%;
+  top: 70%;
+  border: 2px dashed black;
+  background-image: linear-gradient(120deg,rgb(121, 209, 238),rgb(111, 96, 243));
+  padding: 8px 14px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  border-radius: 6px;
 }
 
 
@@ -213,7 +225,7 @@ button {
   display: flex;
   position: absolute;
   top: 35%;
-  left: 30%;
+  left: 55%;
   border: 2px dashed black;
   background-image: linear-gradient(120deg,rgb(121, 209, 238),rgb(111, 96, 243));
   padding: 6px 14px;
@@ -221,6 +233,18 @@ button {
   font-family: "Poppins", sans-serif;
   border-radius: 6px;
   /* margin: 12px;   */
+}
+.dtn{
+  display: flex;
+  position: absolute;
+  top: 35%;
+  left: 14%;
+  border: 2px dashed black;
+  background-image: linear-gradient(120deg,rgb(121, 209, 238),rgb(111, 96, 243));
+  padding: 8px 14px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  border-radius: 6px;
 }
  
 }
