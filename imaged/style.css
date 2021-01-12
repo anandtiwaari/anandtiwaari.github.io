@@ -217,7 +217,7 @@ button {
      /* position: absolute; */
      /* left: 40%; */
      position: absolute;
-     top: 27%;
+     top: 30%;
      left: 35%;
      color:black;
      border: 1px solid orange;
@@ -228,7 +228,7 @@ button {
  .mnew{
   display: flex;
   position: absolute;
-  top: 35%;
+  top: 38%;
   left: 55%;
   border: 2px dashed black;
   background-image: linear-gradient(120deg,rgb(121, 209, 238),rgb(111, 96, 243));
@@ -241,7 +241,7 @@ button {
 .dtn{
   display: flex;
   position: absolute;
-  top: 35%;
+  top: 38%;
   left: 14%;
   border: 2px dashed black;
   background-image: linear-gradient(120deg,rgb(121, 209, 238),rgb(111, 96, 243));
