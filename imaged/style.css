@@ -216,6 +216,9 @@ button {
  .ctn{
      /* position: absolute; */
      /* left: 40%; */
+     position: absolute;
+     top: 125%;
+     left: 70%;
      color:black;
      border: 1px solid orange;
      outline: none;
