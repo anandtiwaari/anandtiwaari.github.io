@@ -74,6 +74,7 @@ button {
   border: 2px solid black;
   /*  */
 }
+
 .select-image {
   height: 500px;
   width: 800px;
@@ -125,7 +126,7 @@ button {
 
 @media screen and (max-width: 420px) {
   .left {
-      padding: 50px;
+      padding: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -201,13 +202,26 @@ button {
     outline: none;
   }
  .ctn{
-     position: absolute;
-     left: 40%;
+     /* position: absolute; */
+     /* left: 40%; */
      color:black;
      border: 1px solid orange;
      outline: none;
      border-radius: 12px;
  }
+ .mnew{
+  display: flex;
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  border: 2px dashed black;
+  background-image: linear-gradient(120deg,rgb(121, 209, 238),rgb(111, 96, 243));
+  padding: 6px 14px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  border-radius: 6px;
+  /* margin: 12px;   */
+}
  
 }
 
