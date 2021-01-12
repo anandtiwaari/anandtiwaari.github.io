@@ -35,6 +35,9 @@ body {
   padding-right: 24px;
   /* padding: 0 34px; */
 }
+h3{
+  color: rgb(26,115,232);
+}
 .right {
   position: absolute;
   left: 30%;
@@ -75,6 +78,50 @@ button {
   height: 500px;
   width: 800px;
 }
+.defbtn{
+  display: hidden;
+  position: absolute;
+  left: 8%;
+}
+.custombtn{
+  display: flex;
+  position: absolute;
+  left: 6%;
+  background: none;
+  /* border: 2px dashed black; */
+  background-image: linear-gradient(120deg,rgb(81, 136, 224),rgb(90, 10, 155));
+  padding: 5px 80px;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+.mnew{
+  display: flex;
+  position: absolute;
+  top: 70%;
+  left: 8%;
+  border: 2px dashed black;
+  background-image: linear-gradient(120deg,rgb(121, 209, 238),rgb(111, 96, 243));
+  padding: 6px 14px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  border-radius: 6px;
+  /* margin: 12px;   */
+}
+/* .uimg{
+  position: absolute;
+  left: 25%;
+} */
+#output{
+  display: none;
+}
+.ctn{
+  margin-left: 8px;
+  
+}
+
 
 @media screen and (max-width: 420px) {
   .left {
@@ -163,3 +210,4 @@ button {
  }
  
 }
+
