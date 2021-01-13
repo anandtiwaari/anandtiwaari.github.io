@@ -154,7 +154,7 @@ button {
     height: 0%;
     padding-bottom: 0px;
     /* margin-top: 2px; */
-    margin-top: 750px;
+    margin-top: 550px;
     margin-left: 9px;
     border-radius: 24px;
     box-shadow: 2px 2px 7px #12263a;
@@ -164,7 +164,7 @@ button {
     left: 5%;
     /* top:55%; */
     top:2%;
-    height: 360px;
+    height: 330px;
     width: 350px;
     border: none;
     background: none;
@@ -232,7 +232,7 @@ button {
  .mnew{
   display: flex;
   position: absolute;
-  top: 38%;
+  top: 48%;
   left: 55%;
   border: 2px dashed black;
   background-image: linear-gradient(120deg,rgb(121, 209, 238),rgb(111, 96, 243));
@@ -245,7 +245,7 @@ button {
 .dtn{
   display: flex;
   position: absolute;
-  top: 38%;
+  top: 48%;
   left: 14%;
   border: 2px dashed black;
   background-image: linear-gradient(120deg,rgb(121, 209, 238),rgb(111, 96, 243));
