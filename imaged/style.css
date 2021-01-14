@@ -118,8 +118,14 @@ button {
 #output{
   display: none;
 }
+#dar{
+  /* filter: invert(1); */
+}
 .ctn{
   margin-left: 8px;
+  /* color:Black; */
+  /* filter: invert(1); */
+  background-color: #f2f2f2;
   
 }
 .dtn{
@@ -221,22 +227,22 @@ button {
      /* left: 40%; */
      position: absolute;
      /* top: 30%; */
-     top: 54%;
-     left: 35%;
-     color:black;
-     border: 1px solid orange;
+     top: 48%;
+     left: 82%;
+     background-image: linear-gradient(120deg,rgb(121, 209, 238),rgb(111, 96, 243));
+     /* border: 1px dashed orange; */
      outline: none;
-     padding: 5px 35px;
-     border-radius: 12px;
+     padding: 5px 10px;
+     border-radius: 500px;
  }
  .mnew{
   display: flex;
   position: absolute;
   top: 48%;
-  left: 55%;
+  left: 50%;
   border: 2px dashed black;
   background-image: linear-gradient(120deg,rgb(121, 209, 238),rgb(111, 96, 243));
-  padding: 6px 14px;
+  padding: 6px 10px;
   color: white;
   font-family: "Poppins", sans-serif;
   border-radius: 6px;
@@ -246,10 +252,10 @@ button {
   display: flex;
   position: absolute;
   top: 48%;
-  left: 14%;
+  left: 9%;
   border: 2px dashed black;
   background-image: linear-gradient(120deg,rgb(121, 209, 238),rgb(111, 96, 243));
-  padding: 8px 14px;
+  padding: 8px 10px;
   color: white;
   font-family: "Poppins", sans-serif;
   border-radius: 6px;

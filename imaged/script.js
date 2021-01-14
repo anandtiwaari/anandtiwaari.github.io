@@ -96,21 +96,22 @@ file.addEventListener('change',loadfile)
 
 function alag() {
   // input.value="";
-  document.body.style.backgroundColor = "black";
-  contain.style.backgroundColor = "black";
+  // document.body.style.backgroundColor = "black";
+  // contain.style.backgroundColor = "black";
   // darki.style.backgroundColor="black";
-  if (darki.style.backgroundColor == "black") {
-    modeimg.style.backgroundColor=""
-    document.body.style.backgroundColor = "#fff";
-    contain.style.backgroundColor = "#fff";
-    darki.style.backgroundColor = "#fff";
+  if (document.body.style.backgroundColor == "white") {
+    // modeimg.style.backgroundColor="black"
+    document.body.style.backgroundColor = "Black";
+    contain.style.backgroundColor = "Black";
+    // modeimg.style.filter="invert(1)"
+    // darki.style.backgroundColor = "White";
   } else {
-
-    modeimg.style.filter="invert(1)"
+    
+    // darki.style.backgroundColor = "#fff";
     // document.headth.style.backgroundcolor="white"
-    document.body.style.backgroundColor = "black";
-    contain.style.backgroundColor = "black";
-    darki.style.backgroundColor = "black";
+    document.body.style.backgroundColor = "white";
+    contain.style.backgroundColor = "white";
+    // darki.style.backgroundColor = "Black";
   }
   // console.log("miss tujhe")
 }
