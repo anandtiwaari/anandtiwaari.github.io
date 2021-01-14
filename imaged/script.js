@@ -92,24 +92,24 @@ file.addEventListener('change',loadfile)
 };
 
 
-
+bodyy=document.querySelector('.bdy')
 
 function alag() {
   // input.value="";
   // document.body.style.backgroundColor = "black";
   // contain.style.backgroundColor = "black";
   // darki.style.backgroundColor="black";
-  if (document.body.style.backgroundColor == "white") {
+  if (bodyy.style.backgroundColor == "white") {
     // modeimg.style.backgroundColor="black"
-    document.body.style.backgroundColor = "Black";
+    bodyy.style.backgroundColor = "Black";
     contain.style.backgroundColor = "Black";
     // modeimg.style.filter="invert(1)"
-    // darki.style.backgroundColor = "White";
+    // darki.style.backgroundImage = "White";
   } else {
     
     // darki.style.backgroundColor = "#fff";
     // document.headth.style.backgroundcolor="white"
-    document.body.style.backgroundColor = "white";
+    bodyy.style.backgroundColor = "white";
     contain.style.backgroundColor = "white";
     // darki.style.backgroundColor = "Black";
   }
