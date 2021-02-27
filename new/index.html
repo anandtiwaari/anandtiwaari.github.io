@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .top {
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: rgb(16, 110, 234);
+        align-items: center;
+      }
+
+      .phone {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 2;
+        align-items: center;
+        margin-right: 8px;
+      }
+
+      .phone img,
+      .email img {
+        height: 15px;
+        filter: invert(2);
+      }
+
+      .phone span,
+      .email span {
+        font-family: "Poppins", sans-serif;
+        margin-left: 8px;
+      }
+
+      .email {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex: 1;
+        margin-left: 185px;
+      }
+
+      .logos {
+        display: flex;
+        margin-right: 80px;
+        justify-content: space-evenly;
+      }
+      .logos img {
+        filter: invert(2);
+        height: 20px;
+        padding: 2px 5px;
+        opacity: 0.8;
+      }
+      .bottom {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* background-color: orange; */
+        padding: 35px 0;
+      }
+      .navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style: none;
+      }
+      .list {
+        padding: 0px 15px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        transition: all 0ms ease-in-out;
+      }
+      .list:hover {
+        cursor: pointer;
+        border-bottom: 2px solid rgb(16, 110, 234);
+      }
+      .mainlo span {
+        color: rgb(16, 110, 234);
+        font-weight: bolder;
+        margin-left: 3px;
+      }
+      .mainlo h2 {
+        font-size: 35px;
+      }
+      .alag {
+        padding-bottom: 5px;
+        border-bottom: 2px solid rgb(16, 110, 234);
+      }
+      .paila::before {
+        background: url(back2.jpg) center center/cover;
+        position: absolute;
+        content: "";
+        height: 76%;
+        width: 100%;
+        left: 0;
+        top: 21%;
+        opacity: 0.3;
+        z-index: -1;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        margin-left: 8%;
+        margin-top: 12%;
+      }
+      .content h1 {
+        font-size: 50px;
+        /* font-family: "Poppins", sans-serif; */
+        font-family: "Poppins", sans-serif;
+        font-weight: bolder;
+      }
+      .content h1 span {
+        font-size: 50px;
+        font-family: "Poppins", sans-serif;
+        font-weight: bolder;
+        color: rgb(16, 110, 234);
+      }
+      .content p {
+        font-size: 25px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        opacity: 0.5;
+      }
+      .buttons {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 2%;
+        margin-right: 65%;
+        outline: none;
+      }
+      .imgvala {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15px;
+        padding: 8px 0;
+        background: none;
+        outline: none;
+        border: none;
+        font-family: "Poppins", sans-serif;
+      }
+      .imgvala img {
+        height: 30px;
+      }
+      .get {
+        color: white;
+        background: none;
+        border-radius: 12px;
+        outline: none;
+        background-color: rgb(16, 110, 234);
+        padding: 12px 5px;
+        font-family: "Poppins", sans-serif;
+      }
+      .dujja {
+        /* border: 2px solid orange; */
+        margin-top: 130px;
+      }
+      .container2 {
+        background-color: rgb(215, 252, 255);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .divsa {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid black; */
+        height: 250px;
+        width: 250px;
+        box-shadow: 0 0 105px whitesmoke;
+        background-color: white;
+        margin-top: 20px;
+        border-radius: 5px;
+      }
+      .divsa img{
+        height: 30px;
+      }
+      .con{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 12px;
+      }
+      .con p{
+        margin-top: 20px;
+      }
+      .footcon{
+        margin-top: 25px;
+      }
+      .topp{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+        padding-bottom: 30px;
+      }
+      .footlog{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .footlog img{
+       background-color: green;
+       margin: 25px;
+       padding: 8px;
+       border-radius: 50%;
+      }
+      .footnav ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style: none;
+      }
+      .footnav{
+        margin-top: -2px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+      }
+      .footnav ul li{
+        opacity: 0.8;
+        color: white;
+        margin: 0 32px;
+        font-family: "Poppins", sans-serif;
+      }
+      .footcon{
+        display: flex;
+        flex-direction: column;
+      }
+      .dim li{
+        display: flex;
+        flex-direction: row;
+        color: white;
+      }
+      .bottomm{
+        /* margin-top: 25px; */
+        color: white;
+        background-color: rgb(10, 149, 10);
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .bottomm h3,h4{
+        margin-top: 20px;
+      }
+      .bottomm h4{
+        opacity: 0.6;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="top">
+          <div class="email">
+            <img src="mail.svg" alt="" /> <span>anandt607@gmail.com</span>
+          </div>
+          <div class="phone">
+            <img src="smartphone.svg" alt="" /><span>9106761117</span>
+          </div>
+          <div class="logos">
+            <img src="twitter.svg" alt="" />
+            <img src="facebook.svg" alt="" />
+            <img src="instagram.svg" alt="" />
+            <img src="linkedin.svg" alt="" />
+          </div>
+        </div>
+        <!-- yaha se bottom kaa chaalu -->
+        <div class="bottom">
+          <div class="mainlo">
+            <h2>Clash-Of-Codes<span>.</span></h2>
+          </div>
+          <nav class="navbar">
+            <ul>
+              <li class="list alag">Home</li>
+              <li class="list">About</li>
+              <li class="list">Services</li>
+              <li class="list">Portfolio</li>
+              <li class="list">Team</li>
+              <li class="list">contact</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="paila">
+      <div class="content">
+        <h1>Welcome To <span>Reality Boy</span></h1>
+        <div>
+          <p>We Create Websites and Have Done Several Projects</p>
+        </div>
+      </div>
+      <div class="bhai">
+        <div class="buttons">
+          <button class="get">GET STARTED</button>
+          <button class="imgvala">
+            <img src="play-circle.svg" alt="" /> Watch Projects
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="dujja">
+      <div class="container2">
+        <div class="divsa">
+          <img src="earth-cone.svg" alt="" />
+          <div class="con">
+            <h2>lorem laala</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam
+              maxime sapiente dolore, tenetur saepe laborum, voluptas iure
+              molestiae, aut suscipit numquam alias placeat. Consequatur.
+            </p>
+          </div>
+        </div>
+        <div class="divsa">
+             <img src="re4ceipt.svg" alt="" />
+          <div class="con">
+            <h2>lorem laala</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam
+              maxime sapiente dolore, tenetur saepe laborum, voluptas iure
+              molestiae, aut suscipit numquam alias placeat. Consequatur.
+            </p>
+          </div>
+        </div>
+        <div class="divsa">
+             <img src="speedo.svg" alt="" />
+          <div class="con">
+            <h2>lorem laala</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam
+              maxime sapiente dolore, tenetur saepe laborum, voluptas iure
+              molestiae, aut suscipit numquam alias placeat. Consequatur.
+            </p>
+          </div>
+        </div>
+        <div class="divsa">
+             <img src="earth.svg" alt="" />
+          <div class="con">
+            <h2>lorem laala</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam
+              maxime sapiente dolore, tenetur saepe laborum, voluptas iure
+              molestiae, aut suscipit numquam alias placeat. Consequatur.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footcon">
+        <div class="topp">
+          <div class="footlog">
+            <img src="twitter.svg" alt="">
+            <img src="facebook.svg" alt="">
+            <img src="instagram.svg" alt="">
+            <img src="linkedin.svg" alt="">
+          </div>
+          <div class="footnav">
+            <ul>
+              <li>Home</li>
+              <li>Menu</li>
+              <li>Story</li>
+              <li>Locations</li>
+            </ul>
+            <div class="dim">
+              <ul>
+              <li>Portfolio</li>|
+              <li>Team</li>|
+              <li>About</li>|
+              <li>Contact</li>|
+            </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bottomm">
+          <h3>Designed And Developed By Clash-Of-Codes Team With Love </h3>
+          <h4>Anand Tiwari @copyright| All Rights Reserved</h4>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
