@@ -77,7 +77,7 @@ h1{
     
 }
 .container1{
-    position: absolute;
+    /* position: absolute; */
     top: 5.5%;
     right: 0;
     display: flex;
@@ -90,8 +90,11 @@ h1{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: 8px;
-    width: 90%;
+    margin-left: 25px;
+    /* width: 90%; */
+    position: absolute;
+    top: 8.5%;
+    right: -12%;
 }
 .total-price2,.user-gram2,.result2{
     padding: 14px 5px;
@@ -101,5 +104,5 @@ h1{
     outline: none;
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
-    width: 40%;
+    width: 70%;
 }
