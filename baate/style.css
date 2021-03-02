@@ -260,7 +260,7 @@ header{
         flex-direction: column;
     }
     .gajab{
-        width: 65%;
+        /* width: 65%; */
         margin: auto;
         margin-top: 15px;
         opacity: 0.3;
