@@ -237,5 +237,45 @@ header{
         border-radius: 15px;
         font-weight: bold;
     }
+
+    .mac{
+        display: flex;
+        height: 400px;
+        filter: drop-shadow(0 0.8rem 0.9rem rgba(0, 0, 0, 0.2));
+        margin-left: 5px;
+    }
+
+    .dujja{
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 75px;
+    }
+    .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .gajab{
+        width: 65%;
+        margin: auto;
+        margin-top: 15px;
+        opacity: 0.3;
+        font-size: 30px;
+        display: flex;
+        font-weight: bolder;
+        text-align: center;
+        align-items: center;
+    }
+    .resdes{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        font-size: 55px;
+        font-weight: bolder;
+    }
     
 }
