@@ -125,6 +125,55 @@ header{
     border-radius: 15px;
     font-weight: bold;
 }
+.mac{
+    display: flex;
+    height: 900px;
+    filter: drop-shadow(0 0.8rem 0.9rem rgba(0, 0, 0, 0.2));
+}
+/* .macup::after{
+    background: url(andar.png)center center/cover;
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 85%;
+    left: 0;
+    opacity: 0.9;
+    z-index: -1;
+} */
+.dujja{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.gajab{
+    width: 65%;
+    margin: auto;
+    margin-top: 15px;
+    opacity: 0.3;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.resdes{
+    font-size: 55px;
+    font-weight: bolder;
+}
+/* .macdown{
+    display: flex;
+} */
+/* .macdown img{
+    height: 400px;
+    display: flex;
+} */
 
 
 
