@@ -56,7 +56,7 @@ h1{
     background-color: #333;
     color: rgb(199, 194, 194);
     outline: none;
-
+    
 }
 .btn2{
     display: flex;
@@ -72,13 +72,13 @@ h1{
     outline: none;
     /* float: right; */
     position: absolute;
-    top: 48.5%;
+    top: 38.5%;
     right: 5%;
-
+    
 }
 .container1{
     position: absolute;
-    top: 7%;
+    top: 5.5%;
     right: 0;
     display: flex;
     /* float: right; */
@@ -92,4 +92,14 @@ h1{
     flex-direction: column;
     margin-left: 8px;
     width: 90%;
+}
+.total-price2,.user-gram2,.result2{
+    padding: 14px 5px;
+    border-radius: 12px;
+    border: none;
+    border: 2px solid yellow;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    width: 40%;
 }
