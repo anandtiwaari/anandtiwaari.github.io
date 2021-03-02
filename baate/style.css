@@ -108,7 +108,7 @@ header{
     margin-top: 50px;
     opacity: 0.5;
 }
-button{
+.btn{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,4 +170,23 @@ button{
         border-radius: 15px;
         font-size: 15px;
     }
+
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 65%;
+        margin: auto;
+        margin-top: 25px;
+        
+        background-color: #035AFC;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        padding: 5px 65px;
+        border: none;
+        border-radius: 15px;
+        font-weight: bold;
+    }
+    
 }
