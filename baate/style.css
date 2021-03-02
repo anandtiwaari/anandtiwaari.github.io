@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.logo{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-left: 12px;
+    margin-top: 24px;
+    padding-right: 45px;
+    border-right: 1px solid rgb(133, 130, 130);
+    display: inline;
+}
+.imgvaala{
+    display: flex;
+    display: inline-block;
+    padding: 4px 9px;
+    justify-content: center;
+    align-items: center;
+    background-color:#035AFC;
+    border-radius: 12px;
+}
+.logo img{
+    height: 20px;
+    filter: invert(2);
+}
+.logotext{
+    margin-left: 12px;
+    font-weight: 600;
+}
+.navbar{
+    display: flex;
+    margin-top:24px ;
+    margin-left: 15px;
+    flex: 1;    
+    /* border: 2px solid yellow; */
+    /* width: 70%; */
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    /* justify-content: center; */
+    align-items: center;
+    flex: 1;
+}
+.list{
+    color: #1E2839;
+    padding: 0 12px;
+    font-size: 15px;
+}
+.right{
+    display: flex;
+    align-items: center;
+    margin-right: 14px;
+}
+.login{
+    display: flex;
+    margin-right: 42px;
+    color: #035AFC;
+    font-size: 15px;
+}
+.signup{
+    background: rgba(3,90,252,.2);
+    display: flex;
+    margin-right: 18px;
+    padding: 9px 25px;
+    color: #035AFC;
+    border-radius: 15px;
+    font-size: 15px;
+}
+@media screen and (max-width:420px){
+    header{
+        display: flex;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+    .navbar{
+        display: none;
+    }
+    .right{
+        margin-right: 0px;
+    }
+    .logotext{
+        margin-left: 12px;
+        font-weight: 600;
+        font-size: 12px;
+    }
+    .login{
+        display: flex;
+        margin-right: 22px;
+        color: #035AFC;
+        font-size: 15px;
+    }
+    .signup{
+        background: rgba(3,90,252,.2);
+        display: flex;
+        margin-right: 10px;
+        padding: 9px 25px;
+        color: #035AFC;
+        border-radius: 15px;
+        font-size: 15px;
+    }
+}
