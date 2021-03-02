@@ -240,7 +240,7 @@ header{
 
     .mac{
         display: flex;
-        height: 380px;
+        height: 360px;
         filter: drop-shadow(0 0.8rem 0.9rem rgba(0, 0, 0, 0.2));
         margin-left: 5px;
     }
