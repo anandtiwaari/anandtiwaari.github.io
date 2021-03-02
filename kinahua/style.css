@@ -40,6 +40,9 @@ h1{
     font-weight: bolder;
     /* width: 50%; */
 }
+.total-price{
+    width: 95%;
+}
 .btn{
     display: flex;
     justify-content: center;
