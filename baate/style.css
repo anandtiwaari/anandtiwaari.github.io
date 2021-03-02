@@ -3,7 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+body::before{
+    background: url(dotted.png)center center/cover;
+    position: absolute;
+    content: "";
+    height:100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    z-index: -1;
+}
 body{
+
     font-family: 'Poppins', sans-serif;
 }
 header{
@@ -79,9 +91,51 @@ header{
     border-radius: 15px;
     font-size: 15px;
 }
+.vahi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 52px;
+}
+
+.vahi h1{
+    font-size: 52px;
+    font-weight: bolder;
+    /* font-family: 'Anton', sans-serif; */
+}
+.vahi span{
+    margin-top: 50px;
+    opacity: 0.5;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* border: 5px solid red; */
+    width: 15%;
+    margin: auto;
+    margin-top: 25px;
+    background-color: #035AFC;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 15px 0;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+
+
+
+
+
 @media screen and (max-width:420px){
     header{
         display: flex;
+        justify-content: center;
+        align-items: center;
         margin-top: 10px;
         margin-left: 5px;
         margin-right: 20px;
