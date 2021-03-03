@@ -90,9 +90,9 @@ h1{
 }
 
 .btn1{
-    margin-left: 50%;
-    margin-top: -140px;
-    padding: 3px 20px;
+    margin-left: 4%;
+    margin-top: 50px;
+    padding: 12px 10px;
     border-radius: 12px;
     background-color: #333;
     font-family: 'Poppins', sans-serif;
@@ -101,6 +101,8 @@ h1{
     cursor: pointer;
     outline: none;
     border: none;
+    display: inline;
+    border: 2px solid yellow;
 }
 .total-pricee,.user-gramm,.result1{
     outline: none;
@@ -124,4 +126,8 @@ h1{
     margin-left: 25px;
     margin-right: 0px;
     /* border: 2px solid orange; */
+}
+.laala{
+    display: flex;
+
 }
