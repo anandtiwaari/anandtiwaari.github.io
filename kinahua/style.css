@@ -22,11 +22,18 @@ h1{
     justify-content: space-around;
     align-items: center;
     margin-top: 100px;
+    margin-left: 10px;
+}
+.total-price,.user-gram,.result{
+    outline: none;
+    padding: 8px 0px;
+    border-radius: 12px;
+    border: none;
 }
 .container2{
     position: absolute;
     right: 0;
-    top: 10%;
+    top: 5%;
     display: flex;
     width: 50%;
     /* margin: auto; */
@@ -39,7 +46,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-left: 10px;
+    margin-left: 15px;
     margin-right: 22px;
     /* border: 2px solid orange; */
 }
@@ -47,8 +54,8 @@ h1{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-left: 35px;
-    margin-right: 60px;
+    margin-left: 25px;
+    margin-right: 40px;
     /* border: 2px solid orange; */
 }
 .lefone{
@@ -57,12 +64,7 @@ h1{
 .rigone{
     margin: 32px 0;
 }
-input{
-    outline: none;
-    padding: 10px 8px;
-    border-radius: 12px;
-    border: none;
-}
+
 .total-price{
     margin-top: -40px;
 }
@@ -71,7 +73,7 @@ input{
     /* margin-left: 0px; */
     /* margin-bottom: -20px; */
 }
-button{
+.btn{
     margin-left: 1%;
     margin-top: 50px;
     padding: 12px 25px;
@@ -97,4 +99,27 @@ button{
     cursor: pointer;
     outline: none;
     border: none;
+}
+.total-pricee,.user-gramm,.result1{
+    outline: none;
+    padding: 10px 5px;
+    border-radius: 12px;
+    border: none;
+}
+
+.left1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-right: 22px;
+    /* border: 2px solid orange; */
+}
+.right1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-right: 40px;
+    /* border: 2px solid orange; */
 }
