@@ -46,7 +46,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-left: 15px;
+    margin-left: 12px;
     margin-right: 22px;
     /* border: 2px solid orange; */
 }
@@ -54,12 +54,12 @@ h1{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-left: 25px;
+    margin-left: 12px;
     margin-right: 40px;
     /* border: 2px solid orange; */
 }
 .lefone{
-    margin: 32px 0;
+    margin: 25px 0;
 }
 .rigone{
     margin: 32px 0;
@@ -76,7 +76,7 @@ h1{
 .btn{
     margin-left: 1%;
     margin-top: 50px;
-    padding: 12px 25px;
+    padding: 12px 10px;
     border-radius: 12px;
     background-color: #333;
     font-family: 'Poppins', sans-serif;
@@ -85,12 +85,14 @@ h1{
     cursor: pointer;
     outline: none;
     border: none;
+    display: inline;
+    border: 2px solid yellow;
 }
 
 .btn1{
-    margin-left: 14%;
-    margin-top: 50px;
-    padding: 12px 25px;
+    margin-left: 50%;
+    margin-top: -140px;
+    padding: 3px 20px;
     border-radius: 12px;
     background-color: #333;
     font-family: 'Poppins', sans-serif;
@@ -102,8 +104,8 @@ h1{
 }
 .total-pricee,.user-gramm,.result1{
     outline: none;
-    padding: 10px 5px;
-    border-radius: 12px;
+    padding: 10px 0px;
+    border-radius: 25px;
     border: none;
 }
 
@@ -112,7 +114,7 @@ h1{
     flex-wrap: wrap;
     flex-direction: column;
     margin-left: 15px;
-    margin-right: 22px;
+    margin-right: 0px;
     /* border: 2px solid orange; */
 }
 .right1{
@@ -120,6 +122,6 @@ h1{
     flex-wrap: wrap;
     flex-direction: column;
     margin-left: 25px;
-    margin-right: 40px;
+    margin-right: 0px;
     /* border: 2px solid orange; */
 }
