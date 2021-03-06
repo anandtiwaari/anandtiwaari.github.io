@@ -64,6 +64,17 @@ ul{
     display: none;
 }
 
+.vid{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
 @media screen and (max-width:420px){
     .navbar{
         margin-left: 15px;
@@ -86,6 +97,5 @@ ul{
         justify-content: center;
         align-items: center;
         margin-left: 180px;
-
     }
-}
+}   
