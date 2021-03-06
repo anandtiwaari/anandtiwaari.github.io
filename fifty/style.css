@@ -60,3 +60,17 @@ ul{
     margin-top: 11px;
     opacity: 0.4;
 }
+
+@media screen and (max-width:420px){
+    .navbar{
+        margin-left: 15px;
+        /* background-color: red; */
+    }
+    .list{
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        margin: 0 18px;
+        opacity: 0.8;
+        /* letter-spacing: 1em; */
+    }
+}
