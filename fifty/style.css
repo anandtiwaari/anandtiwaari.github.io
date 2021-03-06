@@ -69,8 +69,11 @@ ul{
     .list{
         font-family: 'Poppins', sans-serif;
         display: flex;
-        margin: 0 18px;
+        margin: 0 3px;
         opacity: 0.8;
         /* letter-spacing: 1em; */
+    }
+    h2{
+        font-size: 14px;
     }
 }
