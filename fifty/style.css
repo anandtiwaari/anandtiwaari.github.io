@@ -60,10 +60,14 @@ ul{
     margin-top: 11px;
     opacity: 0.4;
 }
+.menu img{
+    display: none;
+}
 
 @media screen and (max-width:420px){
     .navbar{
         margin-left: 15px;
+        display: none;
         /* background-color: red; */
     }
     .list{
@@ -75,5 +79,13 @@ ul{
     }
     h2{
         font-size: 14px;
+    }
+    .menu img{
+        /* display: flex; */
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 165px;
+
     }
 }
