@@ -57,19 +57,66 @@ ul{
 }
 .beat span{
     font-family: 'Poppins', sans-serif;
-    margin-top: 11px;
+    margin-top: 4px;
     opacity: 0.4;
 }
 .menu img{
     display: none;
 }
-
-.vid{
-    height: 100%;
+.pehlaa::before{
+    background: url(mountain.jpg)center center/cover;
+    position: absolute;
+    content: "";
+    height: 90%;
     width: 100%;
-    margin: auto;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: -1;
+    margin-top: 87.2px;
+}
+
+.right{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 105px;
+}
+.right h1{
+    letter-spacing: 1em;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    /* color: rgb(12, 236, 87); */
+}
+.nicche{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nicche span{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 110px;
+}
+.btn{
+    /* border: none; */
+    border: 5px solid green;
+    outline: none;
+    border-radius: 12px;
+    padding: 9px 24px;
+    font-family: 'Poppins', sans-serif;
+    background: transparent;
 }
 
 
