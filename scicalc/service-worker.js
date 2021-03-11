@@ -1,8 +1,12 @@
-let resourcesToCache = ["./", "./img/game.png", "./game.js", "./styles.css"];
+const CACHE_NAME  = 'sci-calc';
+
+/* Add relative URL of all the static content you want to store in
+ * cache storage (this will help us use our app offline)*/
+let resourcesToCache = [ "calc2.png", "app.js", "style.css"];
 
 self.addEventListener("install", e=>{
     e.waitUntil(
-        caches.open(sci_calc).then(cache =>{
+        caches.open(CACHE_NAME).then(cache =>{
             return cache.addAll(resourcesToCache);
         })
     );
@@ -17,7 +21,7 @@ self.addEventListener("fetch", e=>{
 });
 
 // Update a service worker
-const cacheWhitelist = ['sci-calc'];
+const cacheWhitelist = ['Sci-calc'];
 self.addEventListener('activate', event => {
     event.waitUntil(
       caches.keys().then(cacheNames => {

@@ -1,0 +1,140 @@
+body {
+    background-color: #42BCBD;
+    overflow: hidden;
+}
+
+.container {
+    /* display: flex;
+    align-items: center;
+    text-align: center; */
+    position: absolute;
+    margin: auto;
+    /* border: 2px solid black; */
+    background-color: #536CAD;
+    padding: 8px;
+    border-radius: 20px;
+    left: 38%;
+    top: 10%;
+    box-shadow: 0 0 8px;
+    height: 550px;
+    width: 500px;
+    border: 2px solid  rgb(135, 173, 135);
+}
+
+#screen {
+    border-radius: 19px;
+    border: none;
+    /* padding-left: 250px;     */
+    padding: 9px 50px;
+    /* border: 3px solid red; */
+    font-size: 30px;
+    background-color: #E4ECF4;
+    color: black;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    border-radius: 20px;
+    background-color: #C4C4C4;
+    padding: 5px 30px;
+    box-shadow: 0 0 6px;
+    margin-top: 0px;
+    margin: 10px 3px;
+    font-size: 30px;
+    border: 1px solid rgb(135, 173, 135);
+}
+
+#tbl {
+    margin: 12px 10px;
+    padding: 12px 13px;
+}
+
+#brac5 {
+    background-color: #92B1CF;
+}
+
+#brac6 {
+    background-color: #92B1CF;
+}
+
+#brac7 {
+    background-color: #92B1CF;
+}
+
+#brac8 {
+    background-color: #92B1CF;
+}
+
+#brac12 {
+    background-color: #92B1CF;
+}
+
+#brac13 {
+    background-color: #92B1CF;
+}
+
+#brac14 {
+    background-color: #92B1CF;
+}
+
+#brac15 {
+    background-color: #92B1CF;
+}
+
+.anand:hover {
+    background-color: rgba(0, 0, 0, 0.178);
+    color: white;
+
+}
+
+@media (max-width: 900px) {
+    .container {
+        /* display: flex;
+    align-items: center;
+    text-align: center; */
+        position: absolute;
+        margin: auto;
+        /* border: 2px solid black; */
+        background-color: #536CAD;
+        padding: 8px;
+        border-radius: 30px;
+        left: 0%;
+        top: 1%;
+        bottom: 1%;
+        box-shadow: 0 0 8px;
+        height: 590px;
+        width: 370px;
+    }
+
+    button {
+        cursor: pointer;
+        border-radius: 20px;
+        background-color: #C4C4C4;
+        padding: 8px 17px;
+        box-shadow: 0 0 6px;
+        margin-top: 0px;
+        margin: 12px 1px;
+        font-size: 30px;
+
+    }
+
+    #screen {
+        border-radius: 19px;
+        border: none;
+        /* padding-left: 250px;     */
+        padding: 8px 0px;
+        border: 3px solid rgb(71, 65, 65);
+        font-size: 26px;
+        background-color: #E4ECF4;
+        color: black;
+        font-weight: bolder;
+    }
+
+    .anand {
+        height: 50px;
+        width: 80px;
+        text-align: center;
+    }
+}
