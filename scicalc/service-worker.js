@@ -2,7 +2,7 @@ const CACHE_NAME  = 'sci-calc';
 
 /* Add relative URL of all the static content you want to store in
  * cache storage (this will help us use our app offline)*/
-let resourcesToCache = [ "calc2.png", "app.js", "style.css"];
+let resourcesToCache = [ "./calc2.png", "./app.js", "./style.css"];
 
 self.addEventListener("install", e=>{
     e.waitUntil(
