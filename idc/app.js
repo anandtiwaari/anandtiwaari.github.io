@@ -2,6 +2,7 @@
 let menu=document.querySelector('.menu')
 let dikha=document.querySelector('.dikha')
 let cancel=document.querySelector('.fist5')
+let fist=document.querySelector('.fist')
 let fist1=document.querySelector('.fist1')
 let fist2=document.querySelector('.fist2')
 let fist3=document.querySelector('.fist3')
@@ -17,7 +18,9 @@ function show(){
     // console.log("kaam chall raha hai")
     menu.style.display="block";
     dikha.style.display="block";
+    dikha.style.transition="all 1s";
     dikha.style.width="200px";
+    fist.style.transition='all 1s'
     fist1.style.display='block'
     fist2.style.display='block'
     fist3.style.display='block'
