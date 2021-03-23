@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header{
+    background-color: #333;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: 160px;
+}
+.list{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin: 0 35px;
+    cursor: pointer;
+}
+.logo img{
+    height: 65px;
+    filter: invert(2);
+}
+.search input{
+    padding: 8px 6px;
+    margin-right: 12px;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    text-align: center;
+    
+}
+.search{
+    margin-right: 12px;
+}
+.menu img{
+    filter: invert(2);
+    display: none;
+}
+
+.dikha{
+    position: absolute;
+    background-color: #333;
+    height: 100%;
+    width: 0px;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.sehmat{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    /* justify-content: center; */
+    align-items: center;
+    /* margin-bottom: px; */
+    margin-top: 65px;
+}
+.fist{
+    margin: 15px 0;
+    font-size: 26px;
+    color: white;
+    list-style: none;  
+    cursor: pointer; 
+    display: none;
+}
+.fist:hover{
+    background-color: white;
+}
+.fist5{
+    list-style: none;
+    font-size: 26px;
+    color: white;
+    position: absolute;
+    top: 2%;
+    left: 8%;
+    cursor: pointer;
+}
+
+@media screen and (max-width:420px){
+    ul{
+        display: none;
+    }
+    .search{
+        margin-right: 35px;
+    }
+    .search input{
+        padding: 5px 3px;
+        margin-right: 12px;
+        border-radius: 6px;
+        font-family: 'Poppins', sans-serif;
+        outline: none;
+        text-align: center;
+        width: 60%;
+    
+    }
+    .menu img{
+        height: 25px;
+        filter: invert(2);
+        display: flex;
+        position: absolute;
+        right: 12%;
+        top: 5%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+}
