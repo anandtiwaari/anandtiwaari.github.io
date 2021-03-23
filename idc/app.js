@@ -51,11 +51,12 @@ let gam = [
 ];
 function run(){
     backimg.src = gam[i];
+    backimg.style.transition='all 0.3s'
     if (i < gam.length - 1) {
       i++;
     } else {
       i = 0;
     }
-    setTimeout('run()',2000)
+    setTimeout('run()',1300)
 }
 onload=run()
