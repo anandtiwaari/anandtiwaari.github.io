@@ -1,61 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>kitna Hua</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-      <h1>KITNA HUA ??</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: url(back.jpg)center center/cover;
+            /* background-image: linear-gradient(90deg, #a6c0fe 0%, #f68084 100%); */
+        }
+        .container{
+            text-align: center;
+            /* transition: all 0.6s ease-in-out; */
+        }
+        .main{
+            /* border: 2px solid black; */
+            width: 500px;
+            margin: auto;
+            /* height: 800px; */
+            padding-bottom: 50px;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 0px 14px 1px black;
+            /* border-radius: 12px; */
+            border-radius: 25px;
+            filter: drop-shadow(2px 4px 8px grey);
+            background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+ background-blend-mode: multiply,multiply;
+        }
+        .main::before{
+         background: url(https://opendoodles.s3-us-west-1.amazonaws.com/Doggie.svg)center center/cover;
+         position: absolute;
+         content: "";
+         height: 100%;
+         width: 100%;
+         top: 0;
+         left: 0;
+         opacity: 0.8;
+         z-index: -1;
+        }
+        span{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .naam{
+            border: none;
+            border-radius: 12px;
+            padding: 15px 100px;
+            outline: none;
+            margin: 5px;
+            font-family: 'Poppins', sans-serif;
+            justify-content: center;
+            font-size: 19px;
+            font-weight: bolder;
+        }
+        .btn{
+            padding: 14px 46px;
+            text-align: center;
+            border-radius: 12px;
+            background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);;
+            border: none;
+            margin-top: 22px;
+            outline: none;
+            filter: drop-shadow(2px 4px 8px grey);
+            font-size: 22px;
+            cursor: pointer;
+            font-weight: bolder;
+        }
+        .kya{
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 5px;
+            align-items: center;
+            text-align: center;
+        }
+        .container2{
+            display: none ;
+            text-align: center;
+            /* transition: all 0.6s ease-in-out; */
+        }
+        .main2{
+            /* border: 2px solid black; */
+            width: 500px;
+            margin: auto;
+            /* height: 800px; */
+            padding-bottom: 50px;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 0px 14px 1px black;
+            /* border-radius: 12px; */
+            border-radius: 25px;
+            filter: drop-shadow(2px 4px 8px grey);
+            background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+ background-blend-mode: multiply,multiply;
+        }
+        .main::before{
+         background: url(https://opendoodles.s3-us-west-1.amazonaws.com/Doggie.svg)center center/cover;
+         position: absolute;
+         content: "";
+         height: 100%;
+         width: 100%;
+         top: 0;
+         left: 0;
+         opacity: 0.8;
+         z-index: -1;
+        }
+        span{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .naam2{
+            border: none;
+            border-radius: 12px;
+            padding: 15px 100px;
+            outline: none;
+            margin: 5px;
+            font-family: 'Poppins', sans-serif;
+            justify-content: center;
+            font-size: 19px;
+            font-weight: bolder;
+        }
+        .btn2{
+            padding: 14px 46px;
+            text-align: center;
+            border-radius: 12px;
+            background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);;
+            border: none;
+            margin-top: 22px;
+            outline: none;
+            filter: drop-shadow(2px 4px 8px grey);
+            font-size: 22px;
+            cursor: pointer;
+            font-weight: bolder;
+        }
+        .kya2{
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 5px;
+            align-items: center;
+            text-align: center;
+        }
+        h1{
+            margin-top: 60px;
+            color: white;
+        font-family: 'Poppins', sans-serif;
+        /* background: linear-gradient(135deg,#ED6EA0,#F7186A,#FBB03B); */
+        background: -webkit-linear-gradient(45deg,#ED6EA0,#F7186A,#FBB03B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+        }
+        #choose{
+            position: absolute;
+            top: 18%;
+            right: 18%;
+            padding: 15px 15px;
+            border-radius: 12px;
+            outline: none;
+            background: url(back3.jpg)center center/cover;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 22px;
+            font-weight: bolder;
+            border: none;
+            cursor: pointer;
+            
+        }
+        .choose1{
+            position: absolute;
+            top: 30%;
+            right: 17.5%;
+            padding: 15px 15px;
+            border-radius: 12px;
+            outline: none;
+            background: url(back3.jpg)center center/cover;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 22px;
+            font-weight: bolder;
+            border: none;
+            cursor: pointer;
+        }
+        option{
+            background-color: black;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
     <div class="container">
-      <div class="left">
-        <!-- <input type="text" class="lefone kg" placeholder="Enter Actual Amount Of kg"> -->
-        <input
-          type="text"
-          placeholder="Enter Price per kg"
-          class="total-price"
-        />
-      </div>
-      <div class="right">
-        <input
-          type="text"
-          class="rigone user-gram"
-          placeholder="Kitna Gram tumhe chaiyeh "
-        />
-        <input type="text" placeholder="" class="result" />
-      </div>
+        <h1>Kitna Hua?!</h1>
+        <div class="main">
+            <h2 class="kya">Find Gram</h2>
+            <span>
+                <input type="text" placeholder="Total Price" class="naam tprice">
+                <input type="text" placeholder="How many Rupee" class="naam rupee">
+                <input type="text"  class="naam gram">
+                <button class="btn">calculate</button>
+            </span>
+        </div>
     </div>
-
-
     <div class="container2">
-      <div class="left1">
-        <!-- <input type="text" class="lefone kg" placeholder="Enter Actual Amount Of kg"> -->
-        <input
-          type="text"
-          placeholder="Enter Price per kg"
-          class="total-pricee"
-        />
-      </div>
-      <div class="right1">
-        <input
-          type="text"
-          class="rigone user-gramm"
-          placeholder="kitne RUpaaye kaa chaiyeh "
-        />
-        <input type="text" placeholder="" class="result1" />
-      </div>
+        <h1>Kitna Hua?!</h1>
+        <div class="main2">
+            <h2 class="kya2">Find Price</h2>
+            <span>
+                <input type="text" placeholder="Total Price" class="naam2 tprice1">
+                <input type="text" placeholder="How much gram" class="naam2 rupee1">
+                <input type="text"  class="naam2 kitnekahua">
+                <button class="btn2">calculate</button>
+            </span>
+        </div>
     </div>
-    <div class="laala">
-    <button class="btn">Calculate Price</button>
-    <button class="btn1">Calculate Grams</button>
-  </div>
-    <script src="app.js"></script>
-  </body>
+<button id="choose">PRICE</button>
+<button class="choose1">GRAM</button>
+    <script> 
+
+    //yhaa se gram find karne kaa hai 
+        var butn=document.querySelector('.btn')
+        let totalprice=document.querySelector('.tprice')
+        let kitneka=document.querySelector('.rupee')
+        let gram=document.querySelector('.gram')
+        let hmm=document.querySelector('.main2')
+        let hmm2=document.querySelector('.main')
+
+        
+        butn.addEventListener('click',kitnagram)
+        function kitnagram(){
+            totalpriceval=totalprice.value
+            kitnekaval=kitneka.value
+            gram.value=kitnekaval*1000/totalpriceval +"  grams"
+            gramval=gram.value+"Grams"
+            console.log("kitne kaa hai")
+            gram.style.backgroundColor="Green"
+            gram.style.color="white"
+        }
+
+
+        //yaha se price find karne kaa hai
+        var butn2=document.querySelector('.btn2')
+        let totalprice2=document.querySelector('.tprice1')
+        let kitnekagram2=document.querySelector('.rupee1')
+        let kitnekahua2=document.querySelector('.kitnekahua')
+        
+        butn2.addEventListener('click',kitnekahua)
+
+        function kitnekahua(){
+            totalpriceval2=totalprice2.value
+            kitnekagramval2=kitnekagram2.value
+            kitnekahua2.value=kitnekagramval2*totalpriceval2/1000 +"  rupees"
+            // gramval=gram.value+"Grams"
+            console.log("kitne kaa hai")
+            kitnekahua2.style.backgroundColor="Green"
+            kitnekahua2.style.color="white"
+        }
+
+
+        let gam=document.querySelector('.gam')
+        let chhose=document.querySelector('#choose')
+        let container2=document.querySelector('.container2')
+        let container1=document.querySelector('.container')
+        let chhose1=document.querySelector('.choose1')
+
+        chhose.addEventListener('click',run)
+
+        function run(){
+                console.log("kaam karre chhe")
+                container2.style.display="block"
+                container2.style.transition="all 0.5s ease-in-out"
+                container1.style.display="none"
+                // conatiner2.style.transition="all 1s"
+                hmm.style.background="url(back3.jpg)center center/cover"
+                // hmm.style.transition="all 0.5s ease-in-out"
+                document.body.style.background="url(back2.jpg)center center/cover"
+            }
+            chhose1.addEventListener('click',run1)
+            
+            function run1(){
+                console.log("kaam karre chhe")
+                container2.style.display="none"
+                container1.style.display="block"
+                // container1.style.transition="all 0.5s ease-in-out"
+                hmm2.style.background="url(back5.jpg)center center/cover"
+                // hmm2.style.transition="all 0.6s ease-in"
+                document.body.style.background="url(back4.jpg)center center/cover"
+        }
+    </script>
+</body>
 </html>
