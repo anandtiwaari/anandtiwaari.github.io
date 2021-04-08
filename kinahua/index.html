@@ -347,6 +347,9 @@
         }
      
         }
+        .kitnekahua,.gram{
+            list-style: none;
+        }
     </style>
 </head>
 <body>
@@ -357,7 +360,8 @@
             <span>
                 <input type="text" placeholder="Total Price" class="naam tprice">
                 <input type="text" placeholder="How many Rupee" class="naam rupee">
-                <input type="text"  class="naam gram">
+                <!-- <input type="text"  class="naam gram"> -->
+                <li  class="naam gram"></li>
                 <button class="btn">calculate</button>
             </span>
         </div>
@@ -369,7 +373,8 @@
             <span>
                 <input type="text" placeholder="Total Price" class="naam2 tprice1">
                 <input type="text" placeholder="How much gram" class="naam2 rupee1">
-                <input type="text"  class="naam2 kitnekahua">
+                <!-- <input type="text"  class="n   aam2 kitnekahua"> -->
+                <li class="naam2 kitnekahua"></li>
                 <button class="btn2">calculate</button>
             </span>
         </div>
@@ -391,7 +396,7 @@
         function kitnagram(){
             totalpriceval=totalprice.value
             kitnekaval=kitneka.value
-            gram.value=kitnekaval*1000/totalpriceval +"  grams"
+            gram.innerText=kitnekaval*1000/totalpriceval +"  grams"
             gramval=gram.value+"Grams"
             console.log("kitne kaa hai")
             gram.style.backgroundColor="Green"
@@ -410,7 +415,7 @@
         function kitnekahua(){
             totalpriceval2=totalprice2.value
             kitnekagramval2=kitnekagram2.value
-            kitnekahua2.value=kitnekagramval2*totalpriceval2/1000 +"  rupees"
+            kitnekahua2.innerText=kitnekagramval2*totalpriceval2/1000 +"  rupees"
             // gramval=gram.value+"Grams"
             console.log("kitne kaa hai")
             kitnekahua2.style.backgroundColor="Green"
