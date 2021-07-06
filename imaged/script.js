@@ -29,11 +29,17 @@ function filt() {
   let Blur = document.querySelector("#Blur");
   let Sepia = document.querySelector("#Sepia");
   let Hue = document.querySelector("#Hue");
+  // let cont = document.querySelector("#cont");
+  // let bright = document.querySelector("#bright");
+  // let satu = document.querySelector("#satu");
 
   let Greyval = Grey.value;
   let Blurval = Blur.value;
   let Sepiaval = Sepia.value;
   let Hueval = Hue.value;
+  // let contval = cont.value;
+  // let brightval = bright.value;
+  // let satuval = Hue.value;
   image.style.filter =
     "grayscale(" +
     Greyval +
