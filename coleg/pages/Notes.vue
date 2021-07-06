@@ -16,7 +16,7 @@
   </div>
 <div  class="noteka">
 
-  <v-col v-for="(notess,index) of notevala" :key="notess.index" 
+  <v-col v-for="(notess,index) of notevala" :key="index" 
   cols="55"
   md="3"
   class='ban'
